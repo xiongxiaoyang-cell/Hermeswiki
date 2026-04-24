@@ -75,3 +75,35 @@
 - 更新 entity：baxi, bolan, deguo, faguo, hanguo, helan, riben, shate, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
 - 新建 entity：ahlianda, feilvbin, jianada, malaixiya, meiguo, moxige, taiguo
 - 总条目：44条
+## 2026-04-24 16:33 — Wiki Lint
+- 死链：0 | 孤立页：7 | 警告：0
+- 🟡 孤立页：malaixiya.md（无入站链接）
+- 🟡 孤立页：meiguo.md（无入站链接）
+- 🟡 孤立页：jianada.md（无入站链接）
+- 🟡 孤立页：moxige.md（无入站链接）
+- 🟡 孤立页：taiguo.md（无入站链接）
+- 🟡 孤立页：feilvbin.md（无入站链接）
+- 🟡 孤立页：ahlianda.md（无入站链接）
+## 20260424 — Wiki Compile
+- 模板：assessment
+- 输出：/tmp/test-assessment.md
+## 20260424 — Wiki Compile
+- 模板：policy-report
+- 输出：/tmp/test-policy.md
+## 20260424 — Wiki Compile
+- 模板：training
+- 输出：/tmp/test-training.md
+## 20260424 — Wiki Compile
+- 模板：client-report
+- 输出：/tmp/test-client.md
+## 2026-04-24 — Wiki Compile 完成
+- 模板1（assessment）：出海潜客评估报告 — 87/120分算法 + 6维度评分条 + 国别详情 + EOR分析
+- 模板2（policy-report）：HR政策合规周报 — 最低工资快照 + 重大变化分类（红黄绿）
+- 模板3（training）：客户培训材料 — 模块化组装，支持 topics 参数
+- 模板4（client-report）：客户综合咨询报告 — 阶段+模式+国别+行动建议完整结构
+- 脚本：scripts/wiki-compile.py（~620行，4模板×4参数组合）
+- 用法：python3 scripts/wiki-compile.py --template assessment --company X --countries deguo,yuenan --stage 1-10
+## 2026-04-24 16:59 — Wiki Lint
+- 死链：0 | 孤立页：2 | 警告：0
+- 🟡 孤立页：new-concept.md（无入站链接）
+- 🟡 孤立页：new-compare.md（无入站链接）
