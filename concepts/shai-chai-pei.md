@@ -7,7 +7,6 @@ tags: [方法论, 出海, 战略, 框架, 杨锴]
 sources: [raw/sources/10_合作生态/人物库/杨锴/杨锴完整介绍.md]
 confidence: high
 ---
-
 # 筛·拆·配出海实战框架
 
 杨锴原创出海实战方法论，三步构建出海HR体系。
@@ -56,9 +55,9 @@ confidence: high
 | 全球化 | 拆（全链路体系）+ 配（本地化团队）|
 
 ## 相关页面
-
 - [[yang-kai]] — 杨锴（方法论原创者）
 - [[chuhai-san-jieduan]] — 出海三阶段模型
 - [[chuhai-pinggu]] — 出海快速评估表（筛的工具）
 - [[zhongqi-chuhai-hr-tixi]] — 出海HR全体系
 - [[longxia-ai-agent]] — 龙虾AI智能体（配的工具）
+- [[luodi-10bu]] 🔴 ← 出海, 方法论

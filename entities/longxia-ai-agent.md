@@ -7,7 +7,6 @@ tags: [AI智能体, 龙虾, 出海HR, 产品, 商业化]
 sources: [raw/sources/06_智能体项目和课程运营/龙虾AI智能体/0416出海人力龙虾AI智能体项目整体规划.md]
 confidence: high
 ---
-
 # 龙虾AI智能体项目
 
 以"AI龙虾"为载体的出海人力资源管理智能体平台。
@@ -62,7 +61,7 @@ confidence: high
 | 钰婷 | C端流量获取与运营 |
 
 ## 相关页面
-
 - [[yonyou-xinfushe]] — 用友薪福社（项目背景公司）
 - [[chuhai-san-jieduan]] — 出海三阶段（Skill应用场景）
 - [[eor-fuwu]] — EOR（龙虾Skill核心场景）
+- [[chuhai-hr-course]] 🔴 ← 产品, 出海HR

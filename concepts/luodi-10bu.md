@@ -7,7 +7,6 @@ tags: [方法论, 执行, 出海]
 sources: [raw/sources/04_人力资源/10-落地执行.md]
 confidence: medium
 ---
-
 # 落地执行10步法
 
 中企出海HR体系建设的标准执行路径，从战略到落地。
@@ -26,7 +25,7 @@ confidence: medium
 10. **迭代优化** — 定期复盘，体系迭代
 
 ## 相关页面
-
 - [[zhongqi-chuhai-hr-tixi]] — 出海HR全体系
 - [[chuhai-san-jieduan]] — 阶段判断
 - [[hegui-fengkong]] — 合规落地
+- [[shai-chai-pei]] 🟡 ← 出海, 方法论

@@ -7,7 +7,6 @@ tags: [用友, 签证, 工作许可, 居留, 产品]
 sources: [raw/sources/09_用友薪福社/产品体系/用友EOR服务方案-2026.md]
 confidence: high
 ---
-
 # 用友签证服务
 
 用友薪福社全球签证与工作许可办理服务。
@@ -37,10 +36,11 @@ confidence: high
 - 签证续签须提前60-90天启动
 
 ## 相关页面
-
 - [[yonyou-xinfushe]] — 用友薪福社
 - [[yongyou-baojia]] — 签证服务报价
 - [[hegui-shengsi]] — 无工作许可属于合规生死线
 - [[xinjapo]] — 新加坡EP
 - [[yuenan]] — 越南工作许可
 - [[shate]] — 沙特工作签证
+- [[yongyou-hailie]] 🔴 ← 产品, 用友
+- [[yongyou-payroll]] 🔴 ← 产品, 用友

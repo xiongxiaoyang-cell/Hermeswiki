@@ -121,3 +121,21 @@
 ## 2026-04-24 — _index 主题索引完成
 - 创建主题索引：xiwang-quyu, dongnanya-quyu, hegui-zhengce, yonggong-moshi, chuhai-jieduan, yongyou-shengtai, xinchou-shebao, zimeiti-yunying
 - 总索引：_index.md
+## 2026-04-24 — _index 主题索引完成（④b+⑨）
+- _index/ 目录创建：8个主题索引页
+  - xiwang-quyu：西欧市场（德国/英国/法国/荷兰/意大利/西班牙/波兰/匈牙利）
+  - dongnanya-quyu：东南亚市场（越南/新加坡/泰国/马来西亚/印尼/菲律宾）
+  - hegui-zhengce：合规政策体系（23个页面）
+  - yonggong-moshi：用工模式全解
+  - chuhai-jieduan：出海阶段与模式选择
+  - yongyou-shengtai：用友薪福社生态
+  - xinchou-shebao：薪酬与社保
+  - zimeiti-yunying：自媒体运营
+- 总索引：_index.md（按区域+职能双维度导航）
+- 生成脚本：scripts/wiki-index-gen.py
+- lint：✅ 0死链 0孤立
+- GitHub: ee2e0da5
+## 2026-04-24 — wikilink 自动关联（⑧）
+- 阈值：共享 tag ≥ 2 | confidence ≠ low
+- 关联了：longxia-ai-agent, feilvbin, yongyou-hailie, malaixiya, chuhai-san-jieduan, luodi-10bu, yongyou-payroll, yongyou-qianzheng, shai-chai-pei, yongyou-baojia
+- 新增链接总数：13 条

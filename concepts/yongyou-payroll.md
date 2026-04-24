@@ -7,7 +7,6 @@ tags: [用友, Payroll, 薪酬发放, 薪税, 产品]
 sources: [raw/sources/09_用友薪福社/产品体系/用友EOR服务方案-2026.md]
 confidence: high
 ---
-
 # 用友Payroll服务
 
 用友薪福社薪税核算与发放服务，解决出海企业"薪酬发放合规难"的问题。
@@ -35,8 +34,9 @@ confidence: high
 - 多国发薪（2国以上），统一 Payroll 系统
 
 ## 相关页面
-
 - [[yonyou-xinfushe]] — 用友薪福社
 - [[xinchou]] — 薪酬绩效体系
 - [[yongyou-baojia]] — 报价体系
 - [[eor-fuwu]] — EOR服务（与Payroll常组合使用）
+- [[yongyou-hailie]] 🔴 ← 产品, 用友
+- [[yongyou-qianzheng]] 🔴 ← 产品, 用友

@@ -7,7 +7,6 @@ tags: [用友, 猎头, 招聘, 合作伙伴, 产品]
 sources: [raw/sources/09_用友薪福社/产品体系/用友EOR服务方案-2026.md]
 confidence: high
 ---
-
 # 用友海猎
 
 用友薪福社旗下猎头服务品牌，为中企出海提供全球中高端人才招聘服务。
@@ -31,7 +30,8 @@ confidence: high
 猎头费率见 [[yongyou-baojia]]
 
 ## 相关页面
-
 - [[yonyou-xinfushe]] — 用友薪福社（母公司）
 - [[zhaopin]] — 全球招聘体系
 - [[yongyou-baojia]] — 报价体系
+- [[yongyou-payroll]] 🔴 ← 产品, 用友
+- [[yongyou-qianzheng]] 🔴 ← 产品, 用友

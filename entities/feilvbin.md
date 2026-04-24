@@ -7,7 +7,6 @@ tags: [东南亚, 国家, 最低工资, 签证与工作许可]
 sources: [raw/sources/03_区域政策/政策日报/20260422.md]
 confidence: medium
 ---
-
 # 🇵🇭 菲律宾
 
 ## 基本信息
@@ -32,6 +31,6 @@ confidence: medium
 
 
 ## 相关页面
-
 - [[hr-policy-daily]] — 全球HR政策日报
 - [[quyu-guihua]] — 区域合规政策
+- [[malaixiya]] 🟡 ← 东南亚, 国家, 最低工资, 签证与工作许可

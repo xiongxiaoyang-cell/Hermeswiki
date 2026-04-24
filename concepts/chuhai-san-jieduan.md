@@ -7,7 +7,6 @@ tags: [出海阶段, 战略定位, 用工模式]
 sources: [raw/sources/01_战略方法论/中企出海HR全体系知识库V5整合版.md]
 confidence: high
 ---
-
 # 出海三阶段模型
 
 中企出海人力资源战略的阶段判断框架，用于确定企业当前所处出海阶段并匹配相应HR策略。
@@ -42,7 +41,7 @@ confidence: high
 - 全球化HR数字化平台
 
 ## 相关页面
-
 - [[zhongqi-chuhai-hr-tixi]] — 出海HR全体系
 - [[eor-fuwu]] — EOR服务详解
 - [[hegui-fengkong]] — 合规风控体系
+- [[zuzhi-jiagou]] 🔴 ← 出海阶段, 用工模式

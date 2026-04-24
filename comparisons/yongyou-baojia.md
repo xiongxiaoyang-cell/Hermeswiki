@@ -7,7 +7,6 @@ tags: [用友薪福社, 报价, EOR, 欧洲, 亚太, 中东非洲]
 sources: [raw/sources/09_用友薪福社/报价体系/]
 confidence: high
 ---
-
 # 用友薪福社报价体系
 
 用友薪福社EOR服务标准报价，锴哥一手业务数据。
@@ -36,7 +35,7 @@ confidence: high
 - **欧洲EOR**：德国、英国、法国等29国标准报价
 
 ## 相关页面
-
 - [[yonyou-xinfushe]] — 用友薪福社概况
 - [[jiaokong-vietnam-eor]] — 交控科技越南EOR案例
 - [[eor-fuwu]] — EOR服务模式
+- [[german-eor]] 🔴 ← EOR, 欧洲
