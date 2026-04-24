@@ -107,3 +107,17 @@
 - 死链：0 | 孤立页：2 | 警告：0
 - 🟡 孤立页：new-concept.md（无入站链接）
 - 🟡 孤立页：new-compare.md（无入站链接）
+## [2026-04] audit | Monthly KB Health Report
+- Pages: 54 total（30 entities / 19 concepts / 4 comparisons / 1 queries）
+- Dead links: 0
+- Orphan pages: 0
+- Health: ✅ PASS
+- Raw sources: 252 files
+- Notes: 删除2个空占位页(new-concept/new-compare)；Wiki Lint cron已验证✅；Wiki Compile脚本上线
+- Cron: b87ac8ebc278，每月1日09:00执行
+## 2026-04-24 — _index 主题索引完成
+- 创建主题索引：xiwang-quyu, dongnanya-quyu, hegui-zhengce, yonggong-moshi, chuhai-jieduan, yongyou-shengtai, xin chou-xincha, zimeiti-yunying
+- 总索引：_index.md
+## 2026-04-24 — _index 主题索引完成
+- 创建主题索引：xiwang-quyu, dongnanya-quyu, hegui-zhengce, yonggong-moshi, chuhai-jieduan, yongyou-shengtai, xinchou-shebao, zimeiti-yunying
+- 总索引：_index.md
