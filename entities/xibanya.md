@@ -40,3 +40,11 @@ confidence: high
 ## 相关页面
 - [[quyu-guihua]] — 南欧合规
 - [[hr-policy-daily]] — 西班牙为政策日报核心池国家
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Real Decreto 126/2026 (BOE) / Salario Mínimo Interprofesional
+- **变化**：SMI：€1,221/月（14薪，年€17,094），自€2,763→€2,849/月（+3.1%）；家政临时工：€9.55/小时
+- **生效日期**：2026年1月1日
+- **信源**：P0 [✓] lamoncloa.gob.es (2026-02-17) / garrigues.com
+

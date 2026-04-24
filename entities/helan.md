@@ -39,3 +39,11 @@ confidence: high
 ## 相关页面
 - [[quyu-guihua]] — 西欧合规
 - [[hr-policy-daily]] — 荷兰为政策日报核心池国家
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Wet minimumloon (Minimum Wage Act) / RVO
+- **变化**：法定小时最低工资（21+）：€14.71/小时（自€14.06，+4.6%）；月薪参考（36小时/周）：€2,303.59（自€2,255.04）；荷兰每半年调整一次（1月1日和7月1日）
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] iamexpat.nl / wageindicator.org / mercans.com
+

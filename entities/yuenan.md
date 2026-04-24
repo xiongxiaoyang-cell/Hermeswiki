@@ -49,3 +49,24 @@ confidence: high
 - [[yongyou-baojia]] — 用友薪福社越南EOR报价
 - [[jiaokong-vietnam-eor]] — 交控科技越南案例
 - [[hr-policy-daily]] — 越南为政策日报重大更新国家
+
+### 2026年4月19日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **法规**：地区最低工资调整
+- **变化**：2025年7月1日起各地区最低工资上调，最高涨幅6.4%
+- **信源**：VietnamPlus, MOLISA
+
+
+### 2026年4月22日
+🔴**⚖️劳动法与合规** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Decree 337 re: e-Labour Contract Platform / Employment Law 2025 / Social Insurance Law 2024
+- **变化**：2026-07-01起电子劳动合同须在国家平台集中注册；劳动登记与社保更新须同步提交
+- **生效日期**：2026年7月1日（电子合同平台）
+- **信源**：P1 [✓] Vietnam Briefing / Allens Australia / Manpower Vietnam
+
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Decree 293 / Government Decree on Statutory Minimum Wages
+- **变化**：2026年1月1日起，四个区域最低工资平均上调7.2%，每月增加250,000–350,000越南盾
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] Mercans / wageindicator.org / LinkedIn
+

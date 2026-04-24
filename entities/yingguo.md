@@ -53,3 +53,36 @@ confidence: high
 - [[hegui-sida-lingyu]] — 社保合规
 - [[hr-policy-daily]] — 英国为政策日报核心池国家
 - [[german-eor]] — 德国EOR（英国备选市场）
+
+### 2026年4月19日
+🟢**⚖️劳动法与合规** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **法规**：Employment Rights Bill 2024
+- **变化**：无限定假日补贴、招聘限制、集体裁员协商改革
+- **生效日期**：2024年10月提出，预计2025-2026实施
+- **信源**：GOV.UK, SHRM
+
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **法规**：National Minimum Wage and National Living Wage rates increase from April 2025
+- **变化**：从2025年4月1日起大幅提高最低工资标准
+- **生效日期**：2025年4月1日
+- **详情**：2026年4月起将进一步涨至£12.21
+- **信源**：GOV.UK (Primary), BBC News, CIPD
+
+🟢**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **变化**：国家养老金从2025年4月起上涨4.1%
+- **信源**：GOV.UK
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：National Minimum Wage Act 1998 / Employment Rights Act 1996
+- **变化**：NLW（21岁+）：£12.71/小时（自£12.21，+4.1%）；NMW（18-20岁）：£10.85/小时（自£10.00，+8.5%）；16-17岁及学徒：£8.00/小时（自£7.55）
+- **生效日期**：2026年4月1日
+- **信源**：P0 [✓] gov.uk/national-minimum-wage-rates (2026-04-01)
+
+🟢**📋签证与工作许可** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Immigration Rules Appendix Skilled Worker
+- **变化**：技能工人签证标准门槛维持在£41,700/年；2026-04-08起实施新薪资合规周期要求（需在发薪周期内持续满足门槛，而非仅申请时）
+- **生效日期**：2026年4月8日（薪资合规周期新规）
+- **信源**：P1 [✓] recruitroo.com / jobbatical.com / davidsonmorris.com
+

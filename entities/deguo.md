@@ -63,3 +63,23 @@ confidence: high
 - [[eor-fuwu]] — EOR四模式对比
 - [[quyu-guihua]] — 西欧合规总览
 - [[hr-policy-daily]] — 德国为政策日报核心池国家
+
+### 2026年4月19日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **法规**：Mindestlohn
+- **变化**：2025年1月涨至€12.82，2026年1月将升至€13.50
+- **信源**：IamExpat, Reuters, BMAS
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Mindestlohngesetz (Minimum Wage Act) / Mindestlohnkommission Recommendation
+- **变化**：法定最低工资从€12.82上调至€13.90/小时（+8.4%）；计划2027年1月1日进一步上调至€14.60
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] activpayroll.com / wageindicator.org / arlettipartners.com
+
+🔴**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **变化**：失业/养老保险缴费上限：€96,600→€101,400/年（月€8,450）；医疗险附加平均费率：2.5%→2.9%；强制险门槛：€6,150→€6,450/月（+4.9%）
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] osborneclarke-arbeitsrecht.de / versicherungsbuero-weiss.com
+

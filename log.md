@@ -70,3 +70,8 @@
 - 更新 [[quyu-guihua]]：区域合规表全添加wikilink，消除所有孤立页
 - lint：47 pages，0死链，0孤立
 - index.md 更新：47 pages total
+## 2026-04-24 16:09 — 政策日报整合
+- 扫描日报：5份
+- 更新 entity：baxi, bolan, deguo, faguo, hanguo, helan, riben, shate, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
+- 新建 entity：ahlianda, feilvbin, jianada, malaixiya, meiguo, moxige, taiguo
+- 总条目：44条
