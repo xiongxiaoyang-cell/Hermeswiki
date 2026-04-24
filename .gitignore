@@ -1,0 +1,19 @@
+# Obsidian config
+.obsidian/
+
+# Binary files (local use only, not pushed to GitHub)
+*.pdf
+*.pptx
+*.xlsx
+*.docx
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mp3
+
+# OS files
+.DS_Store
+Thumbs.db

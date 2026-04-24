@@ -1,0 +1,173 @@
+[
+  {
+    "templateId": "cover",
+    "slots": {
+      "title": "第1讲：认知破局",
+      "subtitle": "出海HR与国内HR的核心差异",
+      "description": "合规优先于效率，属地化优先于总部集权",
+      "footer": "《中企出海人力资源管理入门实战》"
+    }
+  },
+  {
+    "templateId": "contents",
+    "slots": {
+      "title": "目录",
+      "intro": "本节课将探讨以下核心内容",
+      "chapter1": "01 出海HR全景框架",
+      "chapter2": "02 国内HR vs 出海HR差异",
+      "chapter3": "03 出海HR第一性原则",
+      "chapter4": "04 案例复盘"
+    }
+  },
+  {
+    "templateId": "section-divider",
+    "slots": {
+      "chapterNumber": "01",
+      "title": "出海HR全景框架\n中企出海人力资源管理6大模块",
+      "subtitle": "系统化理解出海HR的完整工作版图"
+    }
+  },
+  {
+    "templateId": "content-three-columns",
+    "slots": {
+      "title": "中企出海人力资源管理6大模块",
+      "subtitle": "覆盖出海业务全生命周期",
+      "block1Image": "lucide:shield-check",
+      "block1Heading": "合规管理",
+      "block1Copy": "劳动法、签证、工作许可、数据安全合规",
+      "block2Image": "lucide:network",
+      "block2Heading": "组织设计",
+      "block2Copy": "跨境架构设计、管控模式、分子公司管理",
+      "block3Image": "lucide:users",
+      "block3Heading": "人才获取",
+      "block3Copy": "全球招聘渠道、属地化雇佣、跨文化面试"
+    }
+  },
+  {
+    "templateId": "content-three-columns",
+    "slots": {
+      "title": "中企出海人力资源管理6大模块（续）",
+      "subtitle": "持续运营与数字化赋能",
+      "block1Image": "lucide:banknote",
+      "block1Heading": "薪酬福利",
+      "block1Copy": "全球薪酬体系、税务合规、社保管理",
+      "block2Image": "lucide:globe",
+      "block2Heading": "跨文化管理",
+      "block2Copy": "文化差异沟通、冲突解决、团队融合",
+      "block3Image": "lucide:cpu",
+      "block3Heading": "数字化运营",
+      "block3Copy": "AI提效、数据分析、HR系统集成"
+    }
+  },
+  {
+    "templateId": "section-divider",
+    "slots": {
+      "chapterNumber": "02",
+      "title": "国内HR vs 出海HR\n核心差异对比",
+      "subtitle": "理解本质差异才能做好转型准备"
+    }
+  },
+  {
+    "templateId": "comparison",
+    "slots": {
+      "title": "国内HR与出海HR的核心差异",
+      "subtitle": "思维模式、工作重心、能力要求全对比",
+      "leftLabel": "国内HR",
+      "leftItem1": "专注招聘、培训、绩效、员工关系",
+      "leftItem2": "遵循单一国内劳动法体系",
+      "leftItem3": "总部集权管理模式",
+      "leftItem4": "同语言、同文化、无障碍沟通",
+      "rightLabel": "出海HR",
+      "rightItem1": "合规风控、全球人才配置、跨文化管理",
+      "rightItem2": "精通多国劳动法、属地合规",
+      "rightItem3": "属地化+总部协同的分布式管理",
+      "rightItem4": "多元文化挑战、跨语言沟通"
+    }
+  },
+  {
+    "templateId": "section-divider",
+    "slots": {
+      "chapterNumber": "03",
+      "title": "出海HR第一性原则\n核心思维框架",
+      "subtitle": "两条原则决定出海成败"
+    }
+  },
+  {
+    "templateId": "data-highlight",
+    "slots": {
+      "title": "出海HR第一性原则",
+      "subtitle": "违背这两条原则，代价远超想象",
+      "data1Num": "合规优先",
+      "data1Desc": "于效率",
+      "data2Num": "属地优先",
+      "data2Desc": "于总部集权",
+      "data3Num": "0风险",
+      "data3Desc": "是底线",
+      "slogan": "合规成本是必选项，不是可选项"
+    }
+  },
+  {
+    "templateId": "content-four-columns",
+    "slots": {
+      "title": "出海HR必须扭转的3个核心思维误区",
+      "subtitle": "避免常见认知陷阱",
+      "block1Image": "lucide:copy",
+      "block1Heading": "误区1：国内经验复制",
+      "block1Copy": "以为国内HR经验可直接套用到海外市场",
+      "block2Image": "lucide:coins",
+      "block2Heading": "误区2：成本优先",
+      "block2Copy": "忽视合规成本导致更大的隐性损失",
+      "block3Image": "lucide:control",
+      "block3Heading": "误区3：控制优先",
+      "block3Copy": "试图用总部思维管控全球团队",
+      "block4Image": "lucide:lightbulb",
+      "block4Heading": "正确思维",
+      "block4Copy": "属地化思维、合规底线、规则共识"
+    }
+  },
+  {
+    "templateId": "section-divider",
+    "slots": {
+      "chapterNumber": "04",
+      "title": "案例复盘\n海外踩坑警示录",
+      "subtitle": "真实案例带来的深刻教训"
+    }
+  },
+  {
+    "templateId": "content-one-columns",
+    "slots": {
+      "title": "真实案例：海外踩坑警示",
+      "subtitle": "三个真实故事揭示合规重要性",
+      "block1Heading": "案例1：东南亚996罢工事件",
+      "block1Copy": "某中企将国内996工作制照搬到东南亚子公司，引发员工大规模罢工，被迫调整薪酬福利政策，损失超千万",
+      "block2Heading": "案例2：欧洲解雇赔偿24个月薪资",
+      "block2Copy": "某企业因不了解欧盟各国劳动法，解雇员工时未依法支付足额赔偿金，被判支付相当于24个月薪资的赔偿金"
+    }
+  },
+  {
+    "templateId": "content-two-columns",
+    "slots": {
+      "title": "AI赋能出海HR",
+      "subtitle": "技术工具提升工作效率",
+      "block1Image": "lucide:brain-circuit",
+      "block1Heading": "AI快速梳理各国劳动法差异",
+      "block1Copy": "输入目标国家，快速生成合规要点清单",
+      "block2Image": "lucide:list-checks",
+      "block2Heading": "AI生成能力模型对比清单",
+      "block2Copy": "自动对比国内外HR能力要求差异"
+    }
+  },
+  {
+    "templateId": "quote",
+    "slots": {
+      "quote": "出海HR的第一性原则：合规优先于效率，属地化优先于总部集权",
+      "subtitle": "—— 出海人力资源管理核心铁律"
+    }
+  },
+  {
+    "templateId": "thank-you",
+    "slots": {
+      "description": "下节课预告：红线底线——出海用工全流程合规核心规则"
+    }
+  }
+]
