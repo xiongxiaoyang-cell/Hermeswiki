@@ -139,3 +139,52 @@
 - 阈值：共享 tag ≥ 2 | confidence ≠ low
 - 关联了：longxia-ai-agent, feilvbin, yongyou-hailie, malaixiya, chuhai-san-jieduan, luodi-10bu, yongyou-payroll, yongyou-qianzheng, shai-chai-pei, yongyou-baojia
 - 新增链接总数：13 条
+## 2026-04-24 — wikilink 自动关联完成（⑧）
+- 阈值：共享 tag ≥ 2 | confidence ≠ low
+- 排除泛化 tag：合规/国家/最低工资/社保（entity中出现>10次）
+- 新增关联：10个页面，涉及13条新 wikilink
+  - feilvbin ↔ malaixiya（东南亚）
+  - yongyou-hailie ↔ yongyou-payroll ↔ yongyou-qianzheng（用友产品线）
+  - chuhai-san-jieduan ↔ zuzhi-jiagou（出海+组织架构）
+  - luodi-10bu ↔ shai-chai-pei（落地+筛拆配）
+  - yongyou-baojia ↔ german-eor（用友+德国市场）
+  - longxia-ai-agent ↔ chuhai-hr-course（龙虾+课程）
+- 脚本：scripts/wiki-link-auto.py
+- lint：✅ 0死链 0孤立
+- GitHub: 4e3dbdb6
+## 2026-04-24 17:48 — Wiki Lint
+- 死链：4 | 孤立页：2 | 警告：0
+- 🔴 死链：[[chuhai-hr-tiaozhan]]
+- 🔴 死链：[[EOR服务]]
+- 🔴 死链：[[chuhai-daichuan-management]]
+- 🔴 死链：[[出海HR三阶段]]
+- 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
+- 🟡 孤立页：chuhai-hr-tiaozhan.md（无入站链接）
+## 2026-04-24 17:48 — Wiki Lint
+- 死链：4 | 孤立页：2 | 警告：0
+- 🔴 死链：[[chuhai-hr-tiaozhan]]
+- 🔴 死链：[[出海HR三阶段]]
+- 🔴 死链：[[chuhai-daichuan-management]]
+- 🔴 死链：[[EOR服务]]
+- 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
+- 🟡 孤立页：chuhai-hr-tiaozhan.md（无入站链接）
+## 2026-04-24 17:49 — Wiki Lint
+- 死链：2 | 孤立页：1 | 警告：0
+- 🔴 死链：[[chuhai-daichuan-management]]
+- 🔴 死链：[[chuhai-hr-tiaozhan]]
+- 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
+## 2026-04-24 17:49 — Wiki Lint
+- 死链：2 | 孤立页：1 | 警告：0
+- 🔴 死链：[[chuhai-hr-tiaozhan]]
+- 🔴 死链：[[chuhai-daichuan-management]]
+- 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
+## 2026-04-24 17:49 — Wiki Lint
+- 死链：2 | 孤立页：1 | 警告：0
+- 🔴 死链：[[chuhai-daichuan-management]]
+- 🔴 死链：[[chuhai-hr-tiaozhan]]
+- 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
+## 2026-04-24 17:50 — Wiki Lint
+- 死链：2 | 孤立页：1 | 警告：0
+- 🔴 死链：[[出海盗船管理框架]]
+- 🔴 死链：[[出海中企HR挑战]]
+- 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
