@@ -1,12 +1,13 @@
 ---
 title: 马来西亚
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 type: entity
 tags: [东南亚, 国家, 最低工资, 签证与工作许可]
-sources: [raw/sources/03_区域政策/政策日报/20260419.md, raw/sources/03_区域政策/政策日报/20260423.md]
+sources: [raw/sources/03_区域政策/政策日报/20260419.md, raw/sources/03_区域政策/政策日报/20260423.md, raw/sources/03_区域政策/政策日报/20260425.md]
 confidence: medium
 ---
+
 # 🇲🇾 马来西亚
 
 ## 基本信息
@@ -16,6 +17,17 @@ confidence: medium
 | 英文 | 马来西亚 |
 | 区域 | 东南亚 |
 | 来源 | [[hr-policy-daily|全球HR政策日报]] |
+
+
+### 2026年4月25日
+🔴**📋就业准证（EP）薪资门槛大幅上调** — [[raw/sources/03_区域政策/政策日报/20260425|20260425]]
+- **法规**：Revised Expatriate Salary Policy (MOHA, 2026年1月14日发布)
+- **EP Category I**：RM 20,000+/月（自RM 10,000上调，**翻倍**）
+- **EP Category II**：RM 10,000–19,999/月（自RM 5,000–9,999上调）
+- **EP Category III**：RM 5,000–9,999/月（自RM 3,999–4,999上调）
+- **生效日期**：2026年6月1日（距今37天）
+- **新增要求**：EP II和EP III须提供继承计划（mandatory）；EP III冷却期取消
+- **信源**：P0 [✓] ESD (MOHA官方), Erickson Immigration
 
 
 ### 2026年4月19日
@@ -42,4 +54,4 @@ confidence: medium
 ## 相关页面
 - [[hr-policy-daily]] — 全球HR政策日报
 - [[quyu-guihua]] — 区域合规政策
-- [[feilvbin]] 🟡 ← 东南亚, 国家, 最低工资, 签证与工作许可
+- [[feilvpin]] 🟡 ← 东南亚, 国家, 最低工资, 签证与工作许可

@@ -188,3 +188,12 @@
 - 🔴 死链：[[出海盗船管理框架]]
 - 🔴 死链：[[出海中企HR挑战]]
 - 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
+
+## [2026-04-25] ingest | hr-policy-daily scan + entity update
+- 扫描: 核心池E组（越南、英国、美国、德国、法国、荷兰）+ 轮询池（加拿大、马来西亚、菲律宾、日本）
+- 🔴重大更新×2:
+  - 美国USVI最低工资 $10.50→$12/小时 (生效2026-04-24)
+  - 马来西亚EP薪资门槛翻倍，Category I RM 10,000→20,000 (生效2026-06-01)
+- 新增日报: [[raw/sources/03_区域政策/政策日报/20260425|20260425]]
+- 更新实体: [[meiguo|美国]].md, [[malaixiya|马来西亚]].md
+- 更新状态: hr-policy-countries.json (scan_round 7)
