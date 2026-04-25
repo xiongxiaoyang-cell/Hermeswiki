@@ -57,8 +57,12 @@ def llm_classify(content: str, filename: str) -> dict:
 - slug 不能与现有 slug 重复：{list(ENTITY_FILES.keys())}
 """
 
+    import os
     import urllib.request
     import urllib.parse
+
+    api_key = os.environ.get("MINIMAX_CN_API_KEY", "")
+    base_url = os.environ.get("MINIMAX_CN_BASE_URL", "https://api.minimaxi.com/v1").rstrip("/")
 
     payload = {
         "model": "MiniMax-M2.7",
@@ -68,9 +72,12 @@ def llm_classify(content: str, filename: str) -> dict:
 
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(
-        "http://localhost:8080/v1/chat/completions",
+        f"{base_url}/chat/completions",
         data=data,
-        headers={"Content-Type": "application/json"},
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+        },
         method="POST",
     )
     try:
@@ -84,14 +91,21 @@ def llm_classify(content: str, filename: str) -> dict:
     except Exception as e:
         print(f"    [WARN] LLM调用失败: {e}")
 
-    # Fallback：基于文件名 heuristic
+    # Fallback：基于已知 slug 库做智能映射，避免创建 new-concept
     fname_lower = filename.lower()
+
+    # 国家文件 → 映射到已知 entity（如果已存在entity则复用，不新建）
     for cn, code in KNOWN_ENTITIES.items():
         if cn in content or cn in filename:
-            return {"type": "entity", "slug": code, "title": cn, "tags": ["国家"], "summary": "国家HR政策"}
+            return {"type": "concept", "slug": code, "title": cn, "tags": ["国家"], "summary": "国家HR政策文档"}
+
+    # 包含 compare/vs/对比 → 尝试匹配现有 comparison
     if "compare" in fname_lower or "对比" in content or "vs" in fname_lower:
-        return {"type": "comparison", "slug": "new-compare", "title": filename, "tags": ["对比"], "summary": "对比页面"}
-    return {"type": "concept", "slug": "new-concept", "title": filename, "tags": ["概念"], "summary": "概念页面"}
+        return {"type": "concept", "slug": "new-concept", "title": filename, "tags": ["对比"], "summary": "对比分析文档"}
+
+    # 通用文件 → concept 但用文件名做 slug（避免 new-concept 污染）
+    safe_slug = re.sub(r'[^a-z0-9]+', '-', fname_lower).strip('-')[:40]
+    return {"type": "concept", "slug": safe_slug, "title": filename, "tags": ["概念"], "summary": "概念文档"}
 
 
 # ============================================================
