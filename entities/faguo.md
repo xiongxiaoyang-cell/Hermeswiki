@@ -63,3 +63,26 @@ confidence: high
 - **生效日期**：2026年1月1日
 - **信源**：P1 [✓] employsome.com / wageindicator.org / crede.com.pl
 
+### 2026年4月19日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **法规**：SMIC (Salaire Minimum Interprofessionnel de Croissance)
+- **变化**：2025年1月上涨2%，至每月€1,801.80
+- **影响**：约300万员工
+- **信源**：Service-Public.fr, Euronews
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Code du Travail / Décret SMIC
+- **变化**：SMIC时薪：€11.88→€12.02（+1.2%）；月薪：€1,801.80→€1,823.03；马约特岛单独计算为€9.33/小时
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] employsome.com / wageindicator.org / crede.com.pl
+
+
+### 2026年4月25日
+🟢**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260425|20260425]]
+- **CSG税率**：资产收入CSG上调至10.6%（2026年1月1日起）
+- **互议解除补偿**：雇主缴费从30%上调至**40%**（2026年1月1日起）
+- **就业保险**：雇主缴0.05%（具体细则见官方）
+- **信源**：P0 [✓] Urssaf, Fradeco
+

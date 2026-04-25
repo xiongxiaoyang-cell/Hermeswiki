@@ -53,3 +53,10 @@ confidence: high
 - **生效日期**：2026年1月1日
 - **信源**：P1 [✓] employsome.com / wageindicator.org / agenciabrasil.ebc.com.br
 
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Decreto 12.797/2025
+- **变化**：联邦最低工资：R$1,518→R$1,621/月（+6.79%，约R$7.37/小时）；工作许可（VITEM V）申请人的最低薪资门槛提高至2倍最低工资（R$3,242）；各州最低工资同步调整（巴拉那州最高达R$2,407.90/月）
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] employsome.com / wageindicator.org / agenciabrasil.ebc.com.br
+

@@ -197,3 +197,8 @@
 - 新增日报: [[raw/sources/03_区域政策/政策日报/20260425|20260425]]
 - 更新实体: [[meiguo|美国]].md, [[malaixiya|马来西亚]].md
 - 更新状态: hr-policy-countries.json (scan_round 7)
+## 2026-04-25 19:45 — 政策日报整合
+- 扫描日报：6份
+- 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
+- 新建 entity：
+- 总条目：52条
