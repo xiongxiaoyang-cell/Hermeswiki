@@ -202,3 +202,13 @@
 - 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
 - 新建 entity：
 - 总条目：52条
+
+## [2026-04-25] ingest | hr-policy-daily B-scan (supplementary)
+- 扫描: 核心池E组（越南、英国、美国、德国、法国、荷兰）+ 轮询池（加拿大、马来西亚、菲律宾、日本）
+- 🔴重大更新×2:
+  - 菲律宾Central Luzon RBIII-26二档PHP 515-600/日（+PHP 30-40）生效2026-04-16
+  - 日本-波兰SSA签署（社会保障协定，派遣员工5年内仅参加派出国养老金）
+- 新增日报: [[raw/sources/03_区域政策/政策日报/20260425b|20260425b]]
+- 更新实体: [[feilvbin|菲律宾]].md, [[riben|日本]].md
+- 更新快照: [[hr-policy-daily]] concepts表格
+- 更新状态: hr-policy-countries.json (scan_round 8, B批次)

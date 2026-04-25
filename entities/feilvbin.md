@@ -54,3 +54,12 @@ confidence: medium
 - **发布时间**：2026年4月16日
 - **信源**：P0 [✓] sss.gov.ph (2026-04-16)
 
+### 2026年4月25日 [B批次]
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260425b|20260425b]]
+- **变化**：Central Luzon (Region III) Wage Order No. RBIII-26 第二档调升，2026-04-16生效
+- **调升幅度**：PHP 30-40/日
+- **新标准**：PHP 515-600/日（非农业工人）
+- **适用地区**：Bataan, Bulacan, Nueva Ecija, Pampanga, Tarlac, Zambales
+- **距30天窗口**：21天（2026-04-25起计）
+- **信源**：P1 [✓] PMAP Circular 2025-076 / NWPC Region III (2026-04-25)
+
