@@ -238,3 +238,12 @@
 - 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
 - 新建 entity：
 - 总条目：54条
+
+## [2026-04] audit | Monthly KB Health Report
+- Pages: 59 total（30 entities / 24 concepts / 4 comparisons / 1 queries）
+- Dead links: 0
+- Orphan pages: 0
+- Health: ✅ PASS
+- Raw sources: 256 files
+- Notes: KB健康度全绿，无死链无孤立；pages较上月+5（59 vs 54）；新增_index主题索引（8个主题）；Wiki Compile脚本上线
+- Cron: b87ac8ebc278，每月1日09:00执行
