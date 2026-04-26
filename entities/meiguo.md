@@ -47,3 +47,15 @@ confidence: medium
 - **生效日期**：2026年5月11日（距今日20天，⚠️紧急需应对）
 - **信源**：P0 [✓] Federal Register / DOL Official Notice (2026-02-09)
 
+### 20260426A
+🟢**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260426A|20260426A]]
+- **信源**：[P1 ⚠️] [Mercer Advisors](https://www.merceradvisors.com/insights/social-security-wage-base-2026-increase-employer-guide/) — verified 2026-04-26
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Executive Order 13658 — Federal Contractor Minimum Wage
+- **变化**：联邦承包商最低工资从$13.30/小时上调至$13.65/小时
+- **生效日期**：2026年5月11日（距今日20天，⚠️紧急需应对）
+- **信源**：P0 [✓] Federal Register / DOL Official Notice (2026-02-09)
+
