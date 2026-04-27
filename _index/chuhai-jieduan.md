@@ -1,7 +1,7 @@
 ---
 title: 出海阶段与模式选择
-created: 2026-04-24
-updated: 2026-04-24
+created: 2026-04-27
+updated: 2026-04-27
 type: summary
 tags: [出海阶段, 出海]
 sources: []
@@ -12,9 +12,9 @@ confidence: high
 
 试水期(0-1) → 增长期(1-10) → 全球化(成熟期) 三阶段框架。各阶段核心痛点、用工模式、HR战略重点。
 
-**相关主题：** #EOR · #IC · #中小微 · #人才 · #全球化 · #区域
+**相关主题：** #EOR · #IC · #中小微 · #人才 · #全球化 · #出海HR
 
-**收录页面：** 15 个
+**收录页面：** 17 个
 
 ---
 
@@ -29,6 +29,8 @@ confidence: high
 - [[zhongxiao-chuhai]] 🟡 (2026-04-24)
 - [[zhaopin]] 🟡 (2026-04-24)
 - [[chuhai-san-jieduan]] 🔴 (2026-04-24)
+- [[chuhai-hr-tiaozhan]] 🟡 
+- [[chuhai-daichuan-management]] 🟡 
 - [[quyu-guihua]] 🟡 (2026-04-24)
 - [[zuzhi-jiagou]] 🟡 (2026-04-24)
 - [[eor-fuwu]] 🔴 (2026-04-24)
@@ -44,4 +46,4 @@ confidence: high
 
 ---
 
-*最后更新：2026-04-24 | 来源：wiki知识库自动聚合*
+*最后更新：2026-04-27 | 来源：wiki知识库自动聚合*

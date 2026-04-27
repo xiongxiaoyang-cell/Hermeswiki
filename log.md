@@ -252,3 +252,9 @@
 - 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
 - 新建 entity：
 - 总条目：60条
+## 2026-04-27 — _index 主题索引完成
+- 创建主题索引：xiwang-quyu, dongnanya-quyu, hegui-zhengce, yonggong-moshi, chuhai-jieduan, yongyou-shengtai, xinchou-shebao, zimeiti-yunying
+- 总索引：_index.md
+## 2026-04-27 16:51 — Wiki Lint
+- 死链：0 | 孤立页：1 | 警告：0
+- 🟡 孤立页：lenovo-hr-course.md（无入站链接）

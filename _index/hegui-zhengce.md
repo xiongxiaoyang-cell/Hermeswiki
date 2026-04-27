@@ -1,7 +1,7 @@
 ---
 title: 合规政策体系
-created: 2026-04-24
-updated: 2026-04-24
+created: 2026-04-27
+updated: 2026-04-27
 type: summary
 tags: [合规, 劳动法, 社保, 签证, 风控, AI合规]
 sources: []
@@ -39,7 +39,7 @@ confidence: high
 ### 📖 概念框架
 
 - [[zhongqi-chuhai-hr-tixi]] 🔴 (2026-04-24)
-- [[hr-policy-daily]] 🔴 (2026-04-24)
+- [[hr-policy-daily]] 🔴 (2026-04-27)
 - [[hegui-shengsi]] 🔴 (2026-04-24)
 - [[quyu-guihua]] 🟡 (2026-04-24)
 - [[hegui-sida-lingyu]] 🔴 (2026-04-24)
@@ -49,4 +49,4 @@ confidence: high
 
 ---
 
-*最后更新：2026-04-24 | 来源：wiki知识库自动聚合*
+*最后更新：2026-04-27 | 来源：wiki知识库自动聚合*

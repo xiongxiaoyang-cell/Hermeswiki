@@ -1,7 +1,7 @@
 ---
 title: 知识库主题索引
-created: 2026-04-24
-updated: 2026-04-24
+created: 2026-04-27
+updated: 2026-04-27
 type: summary
 tags: [导航, 索引]
 sources: []
@@ -12,7 +12,7 @@ confidence: high
 
 > 按主题跨类型导航，而非按目录分类。
 
-**收录：** 54 个知识库页面 | 8 个主题
+**收录：** 59 个知识库页面 | 8 个主题
 
 ---
 
@@ -22,7 +22,7 @@ confidence: high
 - [[_dongnanya-quyu|东南亚市场]] — 5 个页面
 - [[_hegui-zhengce|合规政策体系]] — 23 个页面
 - [[_yonggong-moshi|用工模式全解]] — 9 个页面
-- [[_chuhai-jieduan|出海阶段与模式选择]] — 15 个页面
+- [[_chuhai-jieduan|出海阶段与模式选择]] — 17 个页面
 - [[_yongyou-shengtai|用友薪福社生态]] — 6 个页面
 - [[_xinchou-shebao|薪酬与社保]] — 5 个页面
 - [[_zimeiti-yunying|自媒体运营]] — 3 个页面
@@ -62,4 +62,4 @@ confidence: high
 
 ---
 
-*最后更新：2026-04-24*
+*最后更新：2026-04-27*

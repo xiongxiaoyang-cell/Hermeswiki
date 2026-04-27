@@ -1,7 +1,7 @@
 ---
 title: 东南亚市场
-created: 2026-04-24
-updated: 2026-04-24
+created: 2026-04-27
+updated: 2026-04-27
 type: summary
 tags: [东南亚]
 sources: []
@@ -28,4 +28,4 @@ confidence: high
 
 ---
 
-*最后更新：2026-04-24 | 来源：wiki知识库自动聚合*
+*最后更新：2026-04-27 | 来源：wiki知识库自动聚合*
