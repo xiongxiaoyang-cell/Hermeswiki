@@ -46,3 +46,10 @@ confidence: medium
 - **生效日期**：2026年1月1日
 - **信源**：P1 [✓] mexperience.com / LinkedIn
 
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Mexican Federal Labour Law / CONASAMI Decision
+- **变化**：一般最低工资从MXN $278.80上调至$315.04/天（涨幅13%，已是连续第9年双位数上调）；北部边境自由区从MXN $395.50上调至$440.87/天
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] mexperience.com / LinkedIn
+
