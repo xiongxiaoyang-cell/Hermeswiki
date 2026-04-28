@@ -90,3 +90,25 @@ confidence: medium
 - **生效日期**：2026年5月11日（距今日20天，⚠️紧急需应对）
 - **信源**：P0 [✓] Federal Register / DOL Official Notice (2026-02-09)
 
+### 20260426A
+🟢**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260426A|20260426A]]
+- **信源**：[P1 ⚠️] [Mercer Advisors](https://www.merceradvisors.com/insights/social-security-wage-base-2026-increase-employer-guide/) — verified 2026-04-26
+
+
+### 20260427A
+🔴**📋签证与工作许可** — [[raw/sources/03_区域政策/政策日报/20260427A|20260427A]]
+- **提议机构**：美国劳工部 (DOL)
+- **发布日期**：2026-03-26/27
+- **核心变化**：H-1B/H-1B1/E-3/PERM四级工资标准全面上调：Level I 17th→34th percentile; Level II 34th→52nd; Level III 50th→70th; Level IV 67th→88th percentile
+- **受影响项目**：H-1B (年获批约502,374件), H-1B1 (3,368件), E-3 (9,154件), PERM (35,505件)
+- **评论截止**：2026-05-26
+- **信源**：[P0 ✅] [DOL Newsroom](https://www.dol.gov/newsroom/releases/eta/eta20260326-0) — verified 2026-04-27
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Executive Order 13658 — Federal Contractor Minimum Wage
+- **变化**：联邦承包商最低工资从$13.30/小时上调至$13.65/小时
+- **生效日期**：2026年5月11日（距今日20天，⚠️紧急需应对）
+- **信源**：P0 [✓] Federal Register / DOL Official Notice (2026-02-09)
+

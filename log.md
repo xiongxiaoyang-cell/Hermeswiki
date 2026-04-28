@@ -258,3 +258,8 @@
 ## 2026-04-27 16:51 — Wiki Lint
 - 死链：0 | 孤立页：1 | 警告：0
 - 🟡 孤立页：lenovo-hr-course.md（无入站链接）
+## 2026-04-28 09:35 — 政策日报整合
+- 扫描日报：9份
+- 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
+- 新建 entity：
+- 总条目：60条
