@@ -76,3 +76,31 @@ confidence: high
 - **生效日期**：2026年1月1日
 - **信源**：P0 [✓] lamoncloa.gob.es (2026-02-17) / garrigues.com
 
+### 20260428
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428|20260428]]
+- **现行标准**：€1,221/月（14薪，年收入€17,094）
+- **最新动态**：2026年1月1日起生效，涨幅3.1%，由皇家法令126/2026确认
+- **信源**：[P1 ✅] [Mercans - Spain SMI 2026](https://mercans.com/resources/statutory-alerts/spain-smi-update-agreed-for-2026/) — verified 2026-04-22
+
+
+### 20260428B
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428B|20260428B]]
+- **现行标准**：€1,221/月（14薪，年收入€17,094）
+- **最新动态**：2026年1月1日起生效，涨幅3.1%，由皇家法令126/2026确认
+- **信源**：[P1 ✅] [Mercans - Spain SMI 2026](https://mercans.com/resources/statutory-alerts/spain-smi-update-agreed-for-2026/) — verified 2026-04-22
+
+
+### 20260429A
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260429A|20260429A]]
+- **现行标准**：€1,221/月（14薪，2026年1月1日起）
+- **最新动态**：2026年1月1日起€1,184→€1,221/月（+3.1%），14薪制
+- **信源**：[P0 ✅] [Seguridad Social - SMI](https://www.seg-social.es/ps/est/estminintcont) — verified 2026-04-29
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Real Decreto 126/2026 (BOE) / Salario Mínimo Interprofesional
+- **变化**：SMI：€1,221/月（14薪，年€17,094），自€2,763→€2,849/月（+3.1%）；家政临时工：€9.55/小时
+- **生效日期**：2026年1月1日
+- **信源**：P0 [✓] lamoncloa.gob.es (2026-02-17) / garrigues.com
+

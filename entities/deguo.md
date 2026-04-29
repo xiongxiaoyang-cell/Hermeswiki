@@ -209,3 +209,60 @@ confidence: high
 - **意义**：超过此门槛则须全额缴纳社保和税
 - **信源**：P0 [✓] Bundesregierung, Zoll
 
+### 20260427A
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260427A|20260427A]]
+- **现行标准**：€13.90/小时（自2026-01-01生效）；2027-01-01将进一步上调至€14.60
+- **迷你工作上限**：€603/月（2026年标准）
+- **蓝卡门槛**：普通：€50,700/年；短缺职业：€45,934.20/年
+- **最新动态**：无新增变化；当前标准已于1月1日生效
+- **信源**：[P1 ⚠️] [activpayroll](https://www.activpayroll.com/news-articles/germany-minimum-wage-2026-increase) — verified 2026-04-27
+
+
+### 20260428
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428|20260428]]
+- **现行标准**：€13.90/小时
+- **最新动态**：2026年1月1日起生效，较此前€12.82上涨8.4%；2027年将进一步上调至€14.60
+- **信源**：[P0 ✅] [BMAS - Minimum Wage Q&A](https://www.bmas.de/EN/Labour/Minimum-Wage/the-minimum-wage-questions-and-answers.html) — verified 2026-04-22
+
+
+### 20260428B
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428B|20260428B]]
+- **现行标准**：€13.90/小时
+- **最新动态**：2026年1月1日起生效，较此前€12.82上涨8.4%；2027年将进一步上调至€14.60
+- **信源**：[P0 ✅] [BMAS - Minimum Wage Q&A](https://www.bmas.de/EN/Labour/Minimum-Wage/the-minimum-wage-questions-and-answers.html) — verified 2026-04-22
+
+
+### 20260429A
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260429A|20260429A]]
+- **现行标准**：€13.90/小时（2026年1月1日起）
+- **最新动态**：2026年1月1日起€12.00→€13.90（+15.8%），养老/失业险上限€96,600→€101,400
+- **信源**：[P0 ✅] [BMAS - Minimum Wage](https://www.bmas.de/EN/Labour/Minimum-Wage/minimum-wage.html) — verified 2026-04-29
+
+
+### 2026年4月19日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260419|20260419]]
+- **法规**：Mindestlohn
+- **变化**：2025年1月涨至€12.82，2026年1月将升至€13.50
+- **信源**：IamExpat, Reuters, BMAS
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Mindestlohngesetz (Minimum Wage Act) / Mindestlohnkommission Recommendation
+- **变化**：法定最低工资从€12.82上调至€13.90/小时（+8.4%）；计划2027年1月1日进一步上调至€14.60
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] activpayroll.com / wageindicator.org / arlettipartners.com
+
+🔴**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **变化**：失业/养老保险缴费上限：€96,600→€101,400/年（月€8,450）；医疗险附加平均费率：2.5%→2.9%；强制险门槛：€6,150→€6,450/月（+4.9%）
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] osborneclarke-arbeitsrecht.de / versicherungsbuero-weiss.com
+
+
+### 2026年4月25日
+🟢**🏦社保** — [[raw/sources/03_区域政策/政策日报/20260425|20260425]]
+- **Minijob上限**：€603/月（2026年1月1日起，自€556上调）
+- **年上限**：€7,236/年
+- **意义**：超过此门槛则须全额缴纳社保和税
+- **信源**：P0 [✓] Bundesregierung, Zoll
+
