@@ -281,3 +281,9 @@
 - 核心矛盾：目标定义不一致（框架文档一维 vs 对内版三维并列）
 - index.md 更新：74 → 77 pages
 - 待办：longxia-ai-agent hub页补充出站链接
+
+## [2026-05-01] ingest | 共创会目标群体画像与价值点分析
+- 创建 concepts：[[longxia-gongchuang-hui-mubiao-qunti]]
+- 来源：David 发来的内部分析文档（Word格式）
+- 内容：A/B/C三类目标群体双维度分类体系（职位层级 × AI能力），含画像/贡献矩阵/各环节参与方式/心态洞察/价值对比
+- index.md 更新：77 → 78 pages

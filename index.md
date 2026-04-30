@@ -62,6 +62,7 @@
 - [[longxia-gongchuang-hui-jihua]] — 出海HR共创会综合分析：目标矛盾/P0缺失/优化优先级矩阵
 - [[longxia-gongchuang-hui-yinei]] — 出海HR共创会议程设计对内版分析：Day2-3空白/萃取师缺失/六维激励
 - [[longxia-gongchuang-hui-duiwai]] — 出海HR共创会邀请函对外版分析：往期反馈空/报名缺失/功能无示例
+- [[longxia-gongchuang-hui-mubiao-qunti]] — 出海HR共创会目标群体画像与价值点：A/B/C三类双维度分类体系
 - [[yongkai-memo]] — 锴哥业务备忘，周工作追踪，结合政策日报与自媒体运营
 - [[chuhai-daichuan-management]] — 出海盗船管理框架：跨文化团队/不确定性市场/双轨制管理，摩根世纪公开课框架
 - [[chuhai-hr-tiaozhan]] — 出海HR挑战：恐龙效应与羊群效应，摩根世纪×用友薪福社公益课框架
