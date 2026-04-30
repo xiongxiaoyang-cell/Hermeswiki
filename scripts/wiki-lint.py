@@ -29,7 +29,8 @@ def lint():
                 slug = f.stem  # yuenan, hr-policy-daily
                 all_pages.add(slug)
 
-    # Step 2: 扫描所有 wikilink
+    # Step 2: 扫描所有 wikilink（包括根目录文件如 index.md、log.md）
+    # 但跳过 SCHEMA.md（用 [[wikilinks]] 等作示例，不是真实链接）
     wikilinks_found = set()
 
     for d in [entities_dir, concepts_dir, comparisons_dir, queries_dir]:
@@ -46,12 +47,24 @@ def lint():
                     continue
                 wikilinks_found.add(link)
 
+    # 根目录文件（如 index.md、log.md）也可能有 wikilink
+    for f in WIKI_ROOT.glob("*.md"):
+        if f.name.startswith("_") or f.name in ("SCHEMA.md", "README.md"):
+            continue  # SCHEMA.md 和 README.md 用 [[wikilinks]] 等作示例，非真实链接
+        content = f.read_text()
+        links = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
+        for link in links:
+            link = link.strip()
+            if '/' in link or '#' in link or link.startswith('http'):
+                continue
+            wikilinks_found.add(link)
+
     # Step 3: 找死链（wikilink指向不存在的页面）
     for link in wikilinks_found:
         if link not in all_pages:
             errors.append(f"  🔴 死链：[[{link}]]")
 
-    # Step 4: 建立入站链接映射（谁链接到了这个页面）
+    # Step 4: 建立入站链接映射（谁链接到了这个页面，包括根目录文件）
     inbound = {page: [] for page in all_pages}
     for d in [entities_dir, concepts_dir, comparisons_dir, queries_dir]:
         if not d.exists():
@@ -66,6 +79,22 @@ def lint():
                     continue
                 if link in inbound:
                     inbound[link].append(slug)
+
+    # 根目录文件（如 index.md、log.md）也可能有入站链接
+    for f in WIKI_ROOT.glob("*.md"):
+        if f.name.startswith("_"):
+            continue
+        slug = f.stem
+        if slug not in inbound:
+            inbound[slug] = []
+        content = f.read_text()
+        links = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
+        for link in links:
+            link = link.strip()
+            if '/' in link or '#' in link or link.startswith('http'):
+                continue
+            if link in inbound:
+                inbound[link].append(slug)
 
     # Step 5: 找孤立页（无入站链接的页面，排除首页和特殊页）
     special = {"index", "SCHEMA", "log", "README"}

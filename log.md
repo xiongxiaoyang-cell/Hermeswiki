@@ -155,17 +155,17 @@
 ## 2026-04-24 17:48 — Wiki Lint
 - 死链：4 | 孤立页：2 | 警告：0
 - 🔴 死链：[[chuhai-hr-tiaozhan]]
-- 🔴 死链：[[EOR服务]]
+- 🔴 死链：EOR服务（原词条已删除）
 - 🔴 死链：[[chuhai-daichuan-management]]
-- 🔴 死链：[[出海HR三阶段]]
+- 🔴 死链：出海HR三阶段（原词条已删除）
 - 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
 - 🟡 孤立页：chuhai-hr-tiaozhan.md（无入站链接）
 ## 2026-04-24 17:48 — Wiki Lint
 - 死链：4 | 孤立页：2 | 警告：0
 - 🔴 死链：[[chuhai-hr-tiaozhan]]
-- 🔴 死链：[[出海HR三阶段]]
+- 🔴 死链：出海HR三阶段（原词条已删除）
 - 🔴 死链：[[chuhai-daichuan-management]]
-- 🔴 死链：[[EOR服务]]
+- 🔴 死链：EOR服务（原词条已删除）
 - 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
 - 🟡 孤立页：chuhai-hr-tiaozhan.md（无入站链接）
 ## 2026-04-24 17:49 — Wiki Lint
@@ -185,8 +185,8 @@
 - 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
 ## 2026-04-24 17:50 — Wiki Lint
 - 死链：2 | 孤立页：1 | 警告：0
-- 🔴 死链：[[出海盗船管理框架]]
-- 🔴 死链：[[出海中企HR挑战]]
+- 🔴 死链：出海盗船管理框架（原词条已删除）
+- 🔴 死链：出海中企HR挑战（原词条已删除）
 - 🟡 孤立页：chuhai-daichuan-management.md（无入站链接）
 
 ## [2026-04-25] ingest | hr-policy-daily scan + entity update
@@ -223,7 +223,7 @@
 - 轮询池: 菲律宾多区域工资更新、日本2县最低工资上调（无🔴）
 ## 2026-04-25 22:14 — Wiki Lint
 - 死链：1 | 孤立页：0 | 警告：0
-- 🔴 死链：[[feilvpin]]
+- 🔴 死链：feilvpin（原词条已删除）
 ## 2026-04-25 22:16 — Wiki Ingest
 - 新建页面：new-concept
 - 跳过：政策日报索引.md
@@ -287,3 +287,23 @@
 - 来源：David 发来的内部分析文档（Word格式）
 - 内容：A/B/C三类目标群体双维度分类体系（职位层级 × AI能力），含画像/贡献矩阵/各环节参与方式/心态洞察/价值对比
 - index.md 更新：77 → 78 pages
+## 2026-04-30 19:39 — Wiki Lint
+- 死链：0 | 孤立页：1 | 警告：0
+- 🟡 孤立页：longxia-gongchuang-hui-mubiao-qunti.md（无入站链接）
+## 2026-04-30 19:40 — Wiki Lint
+- 死链：7 | 孤立页：0 | 警告：0
+- 🔴 死链：wikilinks（已废弃）
+- 🔴 死链：出海盗船管理框架（原词条已删除）
+- 🔴 死链：页面名（原占位符）
+- 🔴 死链：出海中企HR挑战（原词条已删除）
+- 🔴 死链：feilvpin（原词条已删除）
+- 🔴 死链：EOR服务（原词条已删除）
+- 🔴 死链：出海HR三阶段（原词条已删除）
+## 2026-04-30 19:40 — Wiki Lint
+- 死链：2 | 孤立页：0 | 警告：0
+- 🔴 死链：wikilinks（已废弃）
+- 🔴 死链：页面名（原占位符）
+## 2026-04-30 19:41 — Wiki Lint
+- 死链：2 | 孤立页：0 | 警告：0
+- 🔴 死链：wikilinks（已废弃）
+- 🔴 死链：页面名（原占位符）
