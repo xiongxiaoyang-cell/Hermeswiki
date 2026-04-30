@@ -64,4 +64,7 @@ confidence: high
 - [[yonyou-xinfushe]] — 用友薪福社（项目背景公司）
 - [[chuhai-san-jieduan]] — 出海三阶段（Skill应用场景）
 - [[eor-fuwu]] — EOR（龙虾Skill核心场景）
-- [[chuhai-hr-course]] 🔴 ← 产品, 出海HR
+- [[chuhai-hr-course]] — 出海HR课程体系（背景产品）
+- [[longxia-gongchuang-hui-jihua]] — 共创会综合分析与优化建议
+- [[longxia-gongchuang-hui-yinei]] — 共创会议程设计对内版分析
+- [[longxia-gongchuang-hui-duiwai]] — 共创会邀请函对外版分析

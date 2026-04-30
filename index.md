@@ -2,7 +2,7 @@
 
 > 内容目录。每个wiki页面按类型列出，附一行摘要。
 > 首次查询请先阅读本文档。
-> Last updated: 2026-04-27 | Total pages: 74
+> Last updated: 2026-05-01 | Total pages: 77
 
 ## Entities
 - [[jiaokong-vietnam-eor]] — 交控科技越南EOR，用友薪福社东南亚典型案例（2026-03）
@@ -59,6 +59,9 @@
 - [[yongyou-payroll]] — 用友Payroll服务：薪税核算与发放，多国多币种合规发放
 - [[yongyou-qianzheng]] — 用友签证服务：全球工作许可/EP/居留许可办理，附各国签证特点
 - [[shai-chai-pei]] — 筛·拆·配出海实战框架：筛市场/拆环节/配资源，杨锴原创三板斧方法论
+- [[longxia-gongchuang-hui-jihua]] — 出海HR共创会综合分析：目标矛盾/P0缺失/优化优先级矩阵
+- [[longxia-gongchuang-hui-yinei]] — 出海HR共创会议程设计对内版分析：Day2-3空白/萃取师缺失/六维激励
+- [[longxia-gongchuang-hui-duiwai]] — 出海HR共创会邀请函对外版分析：往期反馈空/报名缺失/功能无示例
 - [[yongkai-memo]] — 锴哥业务备忘，周工作追踪，结合政策日报与自媒体运营
 - [[chuhai-daichuan-management]] — 出海盗船管理框架：跨文化团队/不确定性市场/双轨制管理，摩根世纪公开课框架
 - [[chuhai-hr-tiaozhan]] — 出海HR挑战：恐龙效应与羊群效应，摩根世纪×用友薪福社公益课框架

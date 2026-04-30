@@ -273,3 +273,11 @@
 - 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
 - 新建 entity：
 - 总条目：102条
+
+## 2026-05-01 ingest | 共创会文档分析入库
+- 来源：David发来两份Word文档（对内版议程设计 + 对外版邀请函）
+- 创建 concepts：[[longxia-gongchuang-hui-jihua]], [[longxia-gongchuang-hui-yinei]], [[longxia-gongchuang-hui-duiwai]]
+- 分析结论：两份文档存在P0缺失（Day2-3空白/萃取师缺失/往期反馈空/报名方式缺失）
+- 核心矛盾：目标定义不一致（框架文档一维 vs 对内版三维并列）
+- index.md 更新：74 → 77 pages
+- 待办：longxia-ai-agent hub页补充出站链接

@@ -53,3 +53,4 @@ confidence: high
 - [[hegui-fengkong]] — 合规风控四原则
 - [[shai-chai-pei]] — 筛·拆·配出海实战框架（杨锴原创方法论）
 - [[chuhai-hr-course]] — 出海HR课程体系（培训产品）
+- [[lenovo-hr-course]] — 联想全球学习中心HR方法论（行业培训参照）
