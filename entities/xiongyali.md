@@ -94,3 +94,10 @@ confidence: high
 - **生效日期**：2026年1月1日
 - **信源**：P1 [✓] accace.com / Instagram government post
 
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Hungarian Labour Code (Code on Social Security 2020)
+- **变化**：2026年标准最低工资：322,800 HUF/月（€827），较2025年上涨约11%
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] accace.com / Instagram government post
+
