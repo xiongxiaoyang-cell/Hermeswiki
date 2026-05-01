@@ -307,3 +307,12 @@
 - 死链：2 | 孤立页：0 | 警告：0
 - 🔴 死链：wikilinks（已废弃）
 - 🔴 死链：页面名（原占位符）
+
+## [2026-05] audit | Monthly KB Health Report
+- Pages: 64 total（30 entities / 29 concepts / 4 comparisons / 1 queries）
+- Dead links: 0
+- Orphan pages: 0
+- Health: ✅ PASS
+- Raw sources: 262 files
+- Notes: KB全绿；pages较上月+5（64 vs 59）；新增共创会系列4个concept页；wiki-tree索引重建完成
+- Cron: b87ac8ebc278，每月1日09:00执行
