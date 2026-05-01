@@ -316,3 +316,8 @@
 - Raw sources: 262 files
 - Notes: KB全绿；pages较上月+5（64 vs 59）；新增共创会系列4个concept页；wiki-tree索引重建完成
 - Cron: b87ac8ebc278，每月1日09:00执行
+## 2026-05-01 09:10 — 政策日报整合
+- 扫描日报：15份
+- 更新 entity：ahlianda, baxi, bolan, deguo, faguo, feilvbin, hanguo, helan, jianada, malaixiya, meiguo, moxige, riben, shate, taiguo, xibanya, xinjapo, xiongyali, yidali, yindu, yingguo, yuenan
+- 新建 entity：
+- 总条目：112条
