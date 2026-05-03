@@ -573,3 +573,83 @@ confidence: high
 - **最新动态**：2026年1月法定小时最低工资从€14.06上调至€14.71（+4.6%）
 - **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-05-02
 
+### 20260428
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428|20260428]]
+- **现行标准**：€14.71/小时（21岁及以上）
+- **最新动态**：2026年1月1日起生效，较此前€14.40上涨2.15%
+- **信源**：[P1 ✅] [Employsome - Netherlands Minimum Wage 2026](https://employsome.com/blog/minimum-wage-netherlands/) — verified 2026-04-22
+
+
+### 20260428B
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428B|20260428B]]
+- **现行标准**：€14.71/小时（21岁及以上）
+- **最新动态**：2026年1月1日起生效，较此前€14.40上涨2.15%
+- **信源**：[P1 ✅] [Employsome - Netherlands Minimum Wage 2026](https://employsome.com/blog/minimum-wage-netherlands/) — verified 2026-04-22
+
+
+### 20260429A
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260429A|20260429A]]
+- **现行标准**：€14.71/小时（2026年1月1日起）
+- **最新动态**：2026年1月1日起€14.06→€14.71/小时（+4.6%）；政府宣布2027年起青少年最低工资上调
+- **信源**：[P0 ✅] [Rijksoverheid - Minimumloon](https://www.rijksoverheid.nl/themas/werk/minimumloon) — verified 2026-04-29
+- **摘要**：the Dutch government announced on 17 April 2026 that minimum youth wages will increase from 2027, with full details to be finalized. This future chang
+
+
+### 20260430A
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260430A|20260430A]]
+- **现行标准**：€14.71/小时（21岁以上，2026年1月1日起）
+- **最新动态**：2026年1月1日起法定小时最低工资从€14.06提高至€14.71（+4.6%），20-21岁青年标准为€13.36
+- **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-04-30
+
+
+### 20260501A
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260501A|20260501A]]
+- **现行标准**：€14.71/小时（21岁以上，2026年1月1日起）
+- **最新动态**：2026年1月1日起法定小时最低工资从€14.06提高至€14.71（+4.6%），20-21岁青年标准为€13.36
+- **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-05-01
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Wet minimumloon (Minimum Wage Act) / RVO
+- **变化**：法定小时最低工资（21+）：€14.71/小时（自€14.06，+4.6%）；月薪参考（36小时/周）：€2,303.59（自€2,255.04）；荷兰每半年调整一次（1月1日和7月1日）
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] iamexpat.nl / wageindicator.org / mercans.com
+
+
+### 2026年4月25日
+🟢**📌其他** — [[raw/sources/03_区域政策/政策日报/20260425|20260425]]
+- **高技能移民（降低标准）**：€3,122/月（2026年）
+- **欧盟蓝卡**：€4,754/月（2026年）
+- **跨国调动（ICT）**：与高技能移民标准相同
+- **30% ruling**：适用于符合条件的外籍员工
+- **信源**：P1 [✓] Activ Paygroup, iamexpat.nl
+
+
+### 日报_文字版_202
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/日报_文字版_2026-04-28|日报_文字版_2026-04-28]]
+- **现行标准**：€14.71/小时（21岁及以上）
+- **最新动态**：2026年1月1日起生效，较此前€14.40上涨2.15%
+- **信源**：[P1 ✅] [Employsome - Netherlands Minimum Wage 2026](https://employsome.com/blog/minimum-wage-netherlands/) — verified 2026-04-22
+
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/日报_文字版_2026-04-29|日报_文字版_2026-04-29]]
+- **现行标准**：€14.71/小时（2026年1月1日起）
+- **最新动态**：2026年1月1日起€14.06→€14.71/小时（+4.6%）；政府宣布2027年起青少年最低工资上调
+- **信源**：[P0 ✅] [Rijksoverheid - Minimumloon](https://www.rijksoverheid.nl/themas/werk/minimumloon) — verified 2026-04-29
+- **摘要**：the Dutch government announced on 17 April 2026 that minimum youth wages will increase from 2027, with full details to be finalized. This future chang
+
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/日报_文字版_2026-04-30|日报_文字版_2026-04-30]]
+- **现行标准**：€14.71/小时（21岁以上，2026年1月1日起）
+- **最新动态**：2026年1月1日起法定小时最低工资从€14.06提高至€14.71（+4.6%），20-21岁青年标准为€13.36
+- **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-04-30
+
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/日报_文字版_2026-05-01|日报_文字版_2026-05-01]]
+- **现行标准**：€14.71/小时（21岁以上，2026年1月1日起）
+- **最新动态**：2026年1月1日起法定小时最低工资从€14.06提高至€14.71（+4.6%），20-21岁青年标准为€13.36
+- **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-05-01
+
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/日报_文字版_2026-05-02|日报_文字版_2026-05-02]]
+- **现行标准**：€14.71/小时（2026年1月生效）
+- **最新动态**：2026年1月法定小时最低工资从€14.06上调至€14.71（+4.6%）
+- **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-05-02
+
