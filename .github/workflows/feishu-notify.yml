@@ -1,4 +1,6 @@
-name: Feishu Push Notification
+name: Feishu Push Notification (DISABLED)
+
+# 注：飞书通知已禁用，如需启用取消注释 notify job
 
 on:
   push:
@@ -6,45 +8,46 @@ on:
       - main
 
 jobs:
-  notify:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Send to Feishu
-        run: |
-          PAYLOAD=$(cat << 'EOF'
-          {
-            "msg_type": "interactive",
-            "card": {
-              "config": {"wide_screen_mode": true},
-              "header": {
-                "title": {"tag": "plain_text", "content": "📚 Hermes Wiki 更新"},
-                "template": "purple"
-              },
-              "elements": [
-                {
-                  "tag": "markdown",
-                  "content": "**仓库:** xiongxiaoyang-cell/Hermeswiki\n**分支:** main\n**推送者:** ${{ github.actor }}\n**时间:** ${{ github.event.head_commit.timestamp }}"
-                },
-                {
-                  "tag": "markdown",
-                  "content": "**提交:** `${{ github.event.head_commit.id }}`\n**Message:** ${{ github.event.head_commit.message }}"
-                },
-                {
-                  "tag": "action",
-                  "actions": [
-                    {
-                      "tag": "button",
-                      "text": {"tag": "plain_text", "content": "查看变更"},
-                      "type": "primary",
-                      "url": "${{ github.event.compare }}"
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-          EOF)
-          curl -s -X POST \
-            -H "Content-Type: application/json" \
-            -d "$PAYLOAD" \
-            "${{ secrets.FEISHU_GROUP_WEBHOOK }}"
+  # notify:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Send to Feishu
+  #       run: |
+  #         PAYLOAD=$(cat << 'EOF'
+  #         {
+  #           "msg_type": "interactive",
+  #           "card": {
+  #             "config": {"wide_screen_mode": true},
+  #             "header": {
+  #               "title": {"tag": "plain_text", "content": "📚 Hermes Wiki 更新"},
+  #               "template": "purple"
+  #             },
+  #             "elements": [
+  #               {
+  #                 "tag": "markdown",
+  #                 "content": "**仓库:** xiongxiaoyang-cell/Hermeswiki\n**分支:** main\n**推送者:** ${{ github.actor }}\n**时间:** ${{ github.event.head_commit.timestamp }}"
+  #               },
+  #               {
+  #                 "tag": "markdown",
+  #                 "content": "**提交:** `${{ github.event.head_commit.id }}`\n**Message:** ${{ github.event.head_commit.message }}"
+  #               },
+  #               {
+  #                 "tag": "action",
+  #                 "actions": [
+  #                   {
+  #                     "tag": "button",
+  #                     "text": {"tag": "plain_text", "content": "查看变更"},
+  #                     "type": "primary",
+  #                     "url": "${{ github.event.compare }}"
+  #                   }
+  #                 ]
+  #               }
+  #             ]
+  #           }
+  #         }
+  #         EOF
+  #         )
+  #         curl -s -X POST \
+  #           -H "Content-Type: application/json" \
+  #           -d "$PAYLOAD" \
+  #           "${{ secrets.FEISHU_GROUP_WEBHOOK }}"
