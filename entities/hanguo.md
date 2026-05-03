@@ -534,3 +534,50 @@ confidence: high
 - **最新动态**：2026年最低工资上涨2.9%至KRW 10,320/小时；养老金费率从9%上调至9.5%，医疗险从7.09%上调至7.19%
 - **信源**：[P1 ✅] [Mercans - South Korea 2026 Minimum Wage](https://mercans.com/resources/statutory-alerts/south-korea-2026-minimum-wage-officially-notified-%EA%B3%A0%EC%8B%9C/) — verified 2026-04-22
 
+### 20260428
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428|20260428]]
+- **现行标准**：KRW 10,320/小时（2026年1月1日起）
+- **最新动态**：2026年最低工资上涨2.9%至KRW 10,320/小时；养老金费率从9%上调至9.5%，医疗险从7.09%上调至7.19%
+- **信源**：[P1 ✅] [Mercans - South Korea 2026 Minimum Wage](https://mercans.com/resources/statutory-alerts/south-korea-2026-minimum-wage-officially-notified-%EA%B3%A0%EC%8B%9C/) — verified 2026-04-22
+
+
+### 20260428B
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260428B|20260428B]]
+- **现行标准**：KRW 10,320/小时（2026年1月1日起）
+- **最新动态**：2026年最低工资上涨2.9%至KRW 10,320/小时；养老金费率从9%上调至9.5%，医疗险从7.09%上调至7.19%
+- **信源**：[P1 ✅] [Mercans - South Korea 2026 Minimum Wage](https://mercans.com/resources/statutory-alerts/south-korea-2026-minimum-wage-officially-notified-%EA%B3%A0%EC%8B%9C/) — verified 2026-04-22
+
+
+### 2026年4月22日
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422|20260422]]
+- **法规**：Minimum Wage Act / Minimum Wage Council Decision
+- **变化**：2026年最低工资：KRW 10,320/小时（月均约KRW 2,156,880），涨幅2.9%
+- **生效日期**：2026年1月1日
+- **信源**：P1 [✓] Korea.net / LinkedIn
+
+🔴**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260422b|20260422b]]
+- **法规**：Minimum Wage Act / Minimum Wage Council Decision
+- **变化**：2026年最低工资：KRW 10,320/小时（月均约KRW 2,156,880），自KRW 10,030上调（+2.9%）
+- **生效日期**：2026年1月1日
+- **信源**：P0 [✓] korea.net (2025-07) / global.seoul.go.kr
+
+
+### 2026年4月23日
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260423|20260423]]
+- **法规**：Minimum Wage Act (근로기준법)
+- **现行标准**：₩10,320韩元/小时（2026年1月1日生效，自₩9,860上调，涨幅约4.7%）
+- **计划调整**：2027年1月1日将进一步上调至₩10,860（届时2025-2027累计涨幅约10%）
+- **信源**：P0 [✓] moel.go.kr; P1 [✓] 知识库 韩国.md (updated 2026-03-26)
+
+🟢**📋签证与工作许可** — [[raw/sources/03_区域政策/政策日报/20260423|20260423]]
+- **配额**：2026年外籍工人工作许可配额191,000人
+- **顶级签证**：扩展顶级人才签证（Top-Tier Visa）适用范围，放宽申请条件
+- **信源**：P1 [✓] visa-guru.com
+
+
+### 日报_文字版_202
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/日报_文字版_2026-04-28|日报_文字版_2026-04-28]]
+- **现行标准**：KRW 10,320/小时（2026年1月1日起）
+- **最新动态**：2026年最低工资上涨2.9%至KRW 10,320/小时；养老金费率从9%上调至9.5%，医疗险从7.09%上调至7.19%
+- **信源**：[P1 ✅] [Mercans - South Korea 2026 Minimum Wage](https://mercans.com/resources/statutory-alerts/south-korea-2026-minimum-wage-officially-notified-%EA%B3%A0%EC%8B%9C/) — verified 2026-04-22
+
