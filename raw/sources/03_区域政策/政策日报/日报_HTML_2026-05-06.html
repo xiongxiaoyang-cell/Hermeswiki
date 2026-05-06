@@ -6,203 +6,45 @@
 <title>全球HR政策日报 | Global HR Policy Daily</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background-color: #f5f6fa;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-    min-height: 100vh;
-    color: #1a1a2e;
-  }
-
+  body { background-color: #f5f6fa; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; min-height: 100vh; color: #1a1a2e; }
   .page { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
-  /* Header */
-  .header {
-    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
-    border-bottom: 1px solid #e4e8f0;
-    padding: 24px 0 20px;
-    margin-bottom: 32px;
-  }
-  .header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
+  .header { background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%); border-bottom: 1px solid #e4e8f0; padding: 24px 0 20px; margin-bottom: 32px; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   .header-left { display: flex; align-items: center; gap: 16px; position: relative; z-index: 10; }
   .logo { width: 48px; height: auto; border-radius: 6px; object-fit: contain; flex-shrink: 0; }
   .header-title { position: relative; }
-  .header-title h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1a2e;
-    letter-spacing: 1px;
-    line-height: 1.2;
-  }
-  .header-title .subtitle {
-    font-size: 12px;
-    color: #6b7280;
-    margin-top: 2px;
-  }
+  .header-title h1 { font-size: 22px; font-weight: 700; color: #1a1a2e; letter-spacing: 1px; line-height: 1.2; }
+  .header-title .subtitle { font-size: 12px; color: #6b7280; margin-top: 2px; }
   .header-right { text-align: right; }
-  .header-date {
-    font-size: 14px;
-    font-weight: 600;
-    color: #374151;
-  }
-  .header-date-en {
-    font-size: 11px;
-    color: #9ca3af;
-    margin-top: 2px;
-  }
-
-  /* Section title */
-  .section-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: #6b7280;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    padding-left: 4px;
-    border-left: 3px solid #3b82f6;
-  }
-
-  /* Grid */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 32px;
-  }
-
-  /* Card */
-  .card {
-    background: #ffffff;
-    border-radius: 12px;
-    border: 1px solid #e5e8f0;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s;
-  }
-  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-
-  .card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 16px 10px;
-    border-bottom: 1px solid #f3f4f6;
-  }
-  .card-flag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+  .header-date { font-size: 14px; font-weight: 600; color: #374151; }
+  .header-date-en { font-size: 11px; color: #9ca3af; margin-top: 2px; }
+  .section-title { font-size: 13px; font-weight: 700; color: #6b7280; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; padding-left: 4px; border-left: 3px solid #3b82f6; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  .card { background: #ffffff; border-radius: 12px; border: 1px solid #e5e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); break-inside: avoid; -webkit-column-break-inside: avoid; page-break-inside: avoid; }
+  .card-top { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; border-bottom: 1px solid #f3f4f6; }
+  .card-flag { display: flex; align-items: center; gap: 8px; }
   .flag-emoji { font-size: 22px; line-height: 1; }
-  .country-tag {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 3px 8px;
-    border-radius: 4px;
-    background: #eff6ff;
-    color: #3b82f6;
-  }
-  .card-date {
-    font-size: 10px;
-    color: #9ca3af;
-    font-weight: 500;
-  }
-
+  .country-tag { font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 3px 8px; border-radius: 4px; background: #eff6ff; color: #3b82f6; }
+  .card-date { font-size: 10px; color: #9ca3af; font-weight: 500; }
   .card-body { padding: 14px 16px 16px; }
-
-  .card-title-zh {
-    font-size: 14px;
-    font-weight: 700;
-    color: #1f2937;
-    line-height: 1.4;
-    margin-bottom: 4px;
-  }
-  .card-title-en {
-    font-size: 11px;
-    color: #6b7280;
-    line-height: 1.4;
-    margin-bottom: 10px;
-    font-style: italic;
-  }
-
-  .card-desc {
-    font-size: 12px;
-    color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-
-  .card-metric {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    margin-bottom: 8px;
-  }
-  .metric-value {
-    font-size: 20px;
-    font-weight: 800;
-    color: #3b82f6;
-  }
-  .metric-label {
-    font-size: 11px;
-    color: #9ca3af;
-  }
-
-  .card-footer {
-    padding: 8px 16px;
-    background: #f9fafb;
-    border-top: 1px solid #f3f4f6;
-  }
-  .source-link {
-    font-size: 10px;
-    color: #3b82f6;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
+  .card-title-zh { font-size: 14px; font-weight: 700; color: #1f2937; line-height: 1.4; margin-bottom: 4px; }
+  .card-title-en { font-size: 11px; color: #6b7280; line-height: 1.4; margin-bottom: 10px; font-style: italic; }
+  .card-desc { font-size: 12px; color: #4b5563; line-height: 1.6; margin-bottom: 10px; }
+  .card-footer { padding: 8px 16px; background: #f9fafb; border-top: 1px solid #f3f4f6; }
+  .source-link { font-size: 10px; color: #3b82f6; text-decoration: none; display: flex; align-items: center; gap: 4px; }
   .source-link:hover { text-decoration: underline; }
   .source-link::before { content: ""; display: inline-block; width: 10px; height: 10px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2'%3E%3Cpath d='M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain; }
-  /* Divider */
-  .divider {
-    height: 1px;
-    background: #e5e8f0;
-    margin: 8px 0 28px;
-  }
-
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 24px 0 32px;
-    border-top: 1px solid #e5e8f0;
-    margin-top: 16px;
-  }
+  .divider { height: 1px; background: #e5e8f0; margin: 8px 0 28px; }
+  .footer { text-align: center; padding: 24px 0 32px; border-top: 1px solid #e5e8f0; margin-top: 16px; }
   .footer-logo { width: 49px; height: 32px; margin-bottom: 8px; border-radius: 6px; object-fit: contain; }
   .footer-text { font-size: 11px; color: #9ca3af; }
   .footer-text strong { color: #6b7280; }
-
-  @media (max-width: 900px) {
-    .grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 600px) {
-    .grid { grid-template-columns: 1fr; }
-    .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
-    .header-right { text-align: left; }
-  }
+  @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; } .header-right { text-align: left; } }
+  @media print { .card { break-inside: avoid; page-break-inside: avoid; } }
 </style>
 </head>
 <body>
-
-<!-- Header -->
 <div class="header">
   <div class="header-inner">
     <div class="header-left">
@@ -214,166 +56,188 @@
     </div>
     <div class="header-right">
       <div class="header-date">2026年5月6日 / May 6, 2026</div>
-      <div class="header-date-en">Issue No. 2026-W19-Wed</div>
+      <div class="header-date-en">Issue No. 20260506</div>
     </div>
   </div>
 </div>
-
 <div class="page">
-
-  <!-- Policy Grid -->
-  <div class="section-title">📋 今日政策要点 | Today's Policy Highlights</div>
+  <div class="section-title">📋 L1 核心池 | Core Pool</div>
   <div class="grid">
-
-    <!-- Card 1 -->
-    <div class="card">
+<div class="card">
       <div class="card-top">
         <div class="card-flag">
-          <span class="flag-emoji">{fa-globe}</span>
-          <span class="country-tag">{德国 DE}</span>
+          <span class="flag-emoji">🇩🇪</span>
+          <span class="country-tag">DE</span>
         </div>
-        <span class="card-date">{2026-05-06}</span>
+        <span class="card-date">2026年5月6日</span>
       </div>
       <div class="card-body">
-        <div class="card-title-zh">{最低工资标准}</div>
-        <div class="card-title-en">{Minimum Wage (Mindestlohn)}</div>
-        <div class="card-desc">{EUR 13.50/小时（2026年1月生效），较2025年 EUR 12.82 提升8.4%。养老保险缴纳上限同步上调至 EUR 101,400/年。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{€13.50}</span>
-          <span class="metric-label">{小时 / hour}</span>
-        </div>
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Wage</div>
+        <div class="card-desc">EUR 13.50/小时 | 2026年1月生效，+8.4%<br/><span style="color:#6b7280;font-size:11px">EUR 13.50/hr | Effective Jan 2026, +8.4%</span></div>
       </div>
       <div class="card-footer">
-        <a class="source-link" href="{https://www.zoll.de/EN/Fields-of-Task/Minimum-wage/}" target="_blank">{Zoll.DE}</a>
+        <a class="source-link" href="https://www.zoll.de/EN/Fields-of-Task/Minimum-wage/" target="_blank">zoll.de</a>
       </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="card">
+<div class="card">
       <div class="card-top">
         <div class="card-flag">
-          <span class="flag-emoji">{fa-globe}</span>
-          <span class="country-tag">{英国 UK}</span>
+          <span class="flag-emoji">🇬🇧</span>
+          <span class="country-tag">UK</span>
         </div>
-        <span class="card-date">{2026-05-06}</span>
+        <span class="card-date">2026年5月6日</span>
       </div>
       <div class="card-body">
-        <div class="card-title-zh">{国家生活工资}</div>
-        <div class="card-title-en">{National Living Wage}</div>
-        <div class="card-desc">{GBP 12.71/小时（2026年4月生效，+4.1%）。18-20岁 GBP 10.85；16-17岁及学徒 GBP 8.00。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{£12.71}</span>
-          <span class="metric-label">{小时 / hour}</span>
-        </div>
+        <div class="card-title-zh">国家生活工资</div>
+        <div class="card-title-en">National Living Wage</div>
+        <div class="card-desc">GBP 12.71/小时 | 2026年4月1日起，+4.1%<br/><span style="color:#6b7280;font-size:11px">GBP 12.71/hr | Effective 1 April 2026, +4.1%</span></div>
       </div>
       <div class="card-footer">
-        <a class="source-link" href="{https://www.gov.uk/national-minimum-wage-rates}" target="_blank">{GOV.UK}</a>
+        <a class="source-link" href="https://www.gov.uk/national-minimum-wage-rates" target="_blank">gov.uk</a>
       </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="card">
+<div class="card">
       <div class="card-top">
         <div class="card-flag">
-          <span class="flag-emoji">{fa-globe}</span>
-          <span class="country-tag">{法国 FR}</span>
+          <span class="flag-emoji">🇫🇷</span>
+          <span class="country-tag">FR</span>
         </div>
-        <span class="card-date">{2026-05-06}</span>
+        <span class="card-date">2026年5月6日</span>
       </div>
       <div class="card-body">
-        <div class="card-title-zh">{最低工资 SMIC}</div>
-        <div class="card-title-en">{Minimum Wage (SMIC)}</div>
-        <div class="card-desc">{EUR 12.02/小时（2026年1月生效，+1.2%）。Q3审查已确认维持当前水平，下次审查 Q3 2026。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{€12.02}</span>
-          <span class="metric-label">{小时 / hour}</span>
-        </div>
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Wage (SMIC)</div>
+        <div class="card-desc">EUR 12.02/小时 | 2026年1月生效，+1.2%<br/><span style="color:#6b7280;font-size:11px">EUR 12.02/hr | Effective Jan 2026, +1.2%</span></div>
       </div>
       <div class="card-footer">
-        <a class="source-link" href="{https://www.service-public.fr/particuliers/actualites/A12888}" target="_blank">{Service-Public.fr}</a>
+        <a class="source-link" href="https://www.service-public.fr/particuliers/actualites/A12888" target="_blank">service-public.fr</a>
       </div>
     </div>
-
+<div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">🇳🇱</span>
+          <span class="country-tag">NL</span>
+        </div>
+        <span class="card-date">2026年5月6日</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Wage</div>
+        <div class="card-desc">EUR 14.71/小时 | 2026年1月生效<br/><span style="color:#6b7280;font-size:11px">EUR 14.71/hr | Effective Jan 2026</span></div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="https://www.rijksoverheid.nl/onderwerpen/minimumloon/bedragen-minimumloon" target="_blank">rijksoverheid.nl</a>
+      </div>
+    </div>
   </div>
-
   <div class="divider"></div>
-
-  <!-- Section 2 -->
-  <div class="section-title">🌐 其他地区 | Other Regions</div>
+  <div class="section-title">🌐 L2 轮询池 | Rotation Pool</div>
   <div class="grid">
-
-    <!-- Card 4 -->
-    <div class="card">
+<div class="card">
       <div class="card-top">
         <div class="card-flag">
-          <span class="flag-emoji">{fa-globe}</span>
-          <span class="country-tag">{荷兰 NL}</span>
+          <span class="flag-emoji">🇲🇾</span>
+          <span class="country-tag">MY</span>
         </div>
-        <span class="card-date">{2026-05-06}</span>
+        <span class="card-date">2026年5月6日</span>
       </div>
       <div class="card-body">
-        <div class="card-title-zh">{最低工资标准}</div>
-        <div class="card-title-en">{Minimum Wage (Minimumloon)}</div>
-        <div class="card-desc">{EUR 14.71/小时（2026年1月生效）。青年分级：16岁30%、17岁40%、18岁50%、19岁60%、20岁80%。2027年已预告再次上调。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{€14.71}</span>
-          <span class="metric-label">{小时 / hour}</span>
-        </div>
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Wage</div>
+        <div class="card-desc">RM 1,700/月 | 2025年2月生效<br/><span style="color:#6b7280;font-size:11px">RM 1,700/mo | Effective Feb 2025</span></div>
       </div>
       <div class="card-footer">
-        <a class="source-link" href="{https://www.rijksoverheid.nl/onderwerpen/minimumloon/bedragen-minimumloon}" target="_blank">{Rijksoverheid.nl}</a>
+        <a class="source-link" href="https://www.mohr.gov.my/" target="_blank">mohr.gov.my</a>
       </div>
     </div>
-
-    <!-- Card 5 -->
-    <div class="card">
+<div class="card">
       <div class="card-top">
         <div class="card-flag">
-          <span class="flag-emoji">{fa-globe}</span>
-          <span class="country-tag">{马来西亚 MY}</span>
+          <span class="flag-emoji">🇹🇭</span>
+          <span class="country-tag">TH</span>
         </div>
-        <span class="card-date">{2026-05-06}</span>
+        <span class="card-date">2026年5月6日</span>
       </div>
       <div class="card-body">
-        <div class="card-title-zh">{最低工资 Upah Minimum}</div>
-        <div class="card-title-en">{National Minimum Wage}</div>
-        <div class="card-desc">{RM 1,700/月（全国统一，2025年2月生效）。部分行业（石油、种植园）有特殊规定。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{RM 1,700}</span>
-          <span class="metric-label">{月 / month}</span>
-        </div>
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Daily Wage</div>
+        <div class="card-desc">THB 337-400/天 | 按省分级<br/><span style="color:#6b7280;font-size:11px">THB 337-400/day | By province</span></div>
       </div>
       <div class="card-footer">
-        <a class="source-link" href="{https://www.mohr.gov.my/}" target="_blank">{MOHR.GOV.MY}</a>
+        <a class="source-link" href="https://www.mol.go.th/en/" target="_blank">mol.go.th</a>
       </div>
     </div>
-
-    <!-- Card 6 -->
-    <div class="card">
+<div class="card">
       <div class="card-top">
         <div class="card-flag">
-          <span class="flag-emoji">{fa-globe}</span>
-          <span class="country-tag">{泰国 TH}</span>
+          <span class="flag-emoji">🇵🇭</span>
+          <span class="country-tag">PH</span>
         </div>
-        <span class="card-date">{2026-05-06}</span>
+        <span class="card-date">2026年5月6日</span>
       </div>
       <div class="card-body">
-        <div class="card-title-zh">{最低工资}</div>
-        <div class="card-title-en">{Minimum Daily Wage}</div>
-        <div class="card-desc">{THB 337-400/天（按省分级，曼谷及周边省份较高）。2026年无全国性调薪公告。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{฿337-400}</span>
-          <span class="metric-label">{天 / day}</span>
-        </div>
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Regional Minimum Wage</div>
+        <div class="card-desc">PHP 30-40/天 | Central Luzon 2026年4月生效<br/><span style="color:#6b7280;font-size:11px">PHP 30-40/day | Central Luzon effective Apr 2026</span></div>
       </div>
       <div class="card-footer">
-        <a class="source-link" href="{https://www.mol.go.th/en/}" target="_blank">{MOL.THAILAND}</a>
+        <a class="source-link" href="https://www.dole.gov.ph/" target="_blank">dole.gov.ph</a>
       </div>
     </div>
-
+<div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">🇯🇵</span>
+          <span class="country-tag">JP</span>
+        </div>
+        <span class="card-date">2026年5月6日</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Wage</div>
+        <div class="card-desc">JPY ~1,070/小时 | 各地 932-1,213 不等<br/><span style="color:#6b7280;font-size:11px">JPY ~1,070/hr | Prefectural rates 932-1,213</span></div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="https://www.mhlw.go.jp/" target="_blank">mhlw.go.jp</a>
+      </div>
+    </div>
+<div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">🇰🇷</span>
+          <span class="country-tag">KR</span>
+        </div>
+        <span class="card-date">2026年5月6日</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">Minimum Wage</div>
+        <div class="card-desc">KRW 10,320/小时 | 2026年1月生效，+2.9%<br/><span style="color:#6b7280;font-size:11px">KRW 10,320/hr | Effective Jan 2026, +2.9%</span></div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="https://www.molit.go.kr/english/MINUTES/MinimumWageCommission.jsp" target="_blank">molit.go.kr</a>
+      </div>
+    </div>
+<div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">🇦🇺</span>
+          <span class="country-tag">AU</span>
+        </div>
+        <span class="card-date">2026年5月6日</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">最低工资</div>
+        <div class="card-title-en">National Minimum Wage</div>
+        <div class="card-desc">AUD 24.73/小时 | 2025年7月生效<br/><span style="color:#6b7280;font-size:11px">AUD 24.73/hr | Effective July 2025</span></div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="https://www.fwc.gov.au/" target="_blank">fwc.gov.au</a>
+      </div>
+    </div>
   </div>
-
-  <!-- Footer -->
   <div class="footer">
     <img src="file:///home/b4ac5686610a4ae2/.hermes/scripts/yonyou_logo.png" class="footer-logo" />
     <div class="footer-text">
@@ -381,7 +245,6 @@
       数据来源：各国家/地区官方劳工政策公告 | © 2026 Global HR Policy Daily
     </div>
   </div>
-
 </div>
 </body>
 </html>
