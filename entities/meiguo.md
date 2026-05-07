@@ -829,3 +829,9 @@ confidence: medium
 - **最新动态**：DOL提议提高H-1B/PERM四级工资标准：Level I 17th→34th, Level IV 67th→88th百分位
 - **信源**：[P1 ✅] [DOL.gov](https://www.dol.gov/agencies/foreign-labor) — verified 2026-04-27
 
+### 2026年5月7日
+🟢**💰联邦最低工资** — [[raw/sources/03_区域政策/政策日报/20260507A|20260507A]]
+- **现行标准**：$7.25/小时
+- **变化**：自2009年以来维持不变。拜登政府正推动立法上调。DOL提议H-1B工资改革
+- **信源**：P1 [✓] dol.gov
+

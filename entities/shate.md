@@ -246,3 +246,9 @@ confidence: high
 - **生效日期**：2026年4月15日（Nitaqat更新）；2026年4月26日（新阶段启动）
 - **信源**：P2 [✓] Fragomen / middleeastbriefing.com / SPA.gov.sa
 
+### 2026年5月7日
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260507A|20260507A]]
+- **现行标准**：SAR 4,000/月
+- **变化**：Nitaqat框架下雇主须为外籍员工支付不低于 SAR 4,000/月
+- **信源**：P1 [✓] mlsd.gov.sa
+

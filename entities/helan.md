@@ -733,3 +733,15 @@ confidence: high
 - **最新动态**：2026年1月法定小时最低工资从€14.06上调至€14.71（+4.6%）
 - **信源**：[P0 ✅] [Rijksoverheid.nl](https://www.rijksoverheid.nl/onderwerpen/minimumloon) — verified 2026-05-02
 
+### 2026年5月7日
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260507A|20260507A]]
+- **现行标准**：EUR 14.71/小时
+- **变化**：2026年1月1日起生效，21岁以上，较2025年 EUR 13.68/小时提升7.5%
+- **信源**：P1 [✓] rijksoverheid.nl
+
+### 2026年5月7日
+🟢**💰同工同酬法** — [[raw/sources/03_区域政策/政策日报/20260507A|20260507A]]
+- **现行标准**：雇主需为所有雇员提供同等待遇
+- **变化**：Equal Pay Act (WAB)，雇员与定期合同雇员同值工作同等报酬
+- **信源**：P1 [✓] rijksoverheid.nl/wab
+

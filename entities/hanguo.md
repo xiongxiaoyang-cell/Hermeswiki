@@ -581,3 +581,15 @@ confidence: high
 - **最新动态**：2026年最低工资上涨2.9%至KRW 10,320/小时；养老金费率从9%上调至9.5%，医疗险从7.09%上调至7.19%
 - **信源**：[P1 ✅] [Mercans - South Korea 2026 Minimum Wage](https://mercans.com/resources/statutory-alerts/south-korea-2026-minimum-wage-officially-notified-%EA%B3%A0%EC%8B%9C/) — verified 2026-04-22
 
+### 2026年5月7日
+🟢**💰最低工资** — [[raw/sources/03_区域政策/政策日报/20260507A|20260507A]]
+- **现行标准**：KRW 10,320/小时
+- **变化**：2026年1月1日起生效，较2025年 KRW 10,030/小时提升2.9%
+- **信源**：P1 [✓] molit.go.kr
+
+### 2026年5月7日
+🟢**💰国民保险** — [[raw/sources/03_区域政策/政策日报/20260507A|20260507A]]
+- **现行标准**：养老金9%、医保7.19%
+- **变化**：2026年费率，雇主雇员各缴一半
+- **信源**：P1 [✓] nhis.or.kr
+
