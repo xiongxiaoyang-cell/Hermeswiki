@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球HR政策日报 | Global HR Policy Daily</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: #f5f6fa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    min-height: 100vh;
+    color: #1a1a2e;
+  }
+
+  .page { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+    border-bottom: 1px solid #e4e8f0;
+    padding: 24px 0 20px;
+    margin-bottom: 32px;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .header-left { display: flex; align-items: center; gap: 16px; position: relative; z-index: 10; }
+  .logo { width: 48px; height: auto; border-radius: 6px; object-fit: contain; flex-shrink: 0; }
+  .header-title { position: relative; }
+  .header-title h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+  .header-title .subtitle {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 2px;
+  }
+  .header-right { text-align: right; }
+  .header-date {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+  }
+  .header-date-en {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 2px;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b7280;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-left: 4px;
+    border-left: 3px solid #3b82f6;
+  }
+
+  /* Grid — 自适应列数：内容少时3列撑满，内容多时自动扩展至4-5列 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  /* Card */
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e8f0;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+    /* 防止打印时信息卡被截断 */
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .card-flag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .flag-emoji { font-size: 22px; line-height: 1; }
+  .country-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: #eff6ff;
+    color: #3b82f6;
+  }
+  .card-date {
+    font-size: 10px;
+    color: #9ca3af;
+    font-weight: 500;
+  }
+
+  .card-body { padding: 14px 16px 16px; }
+
+  .card-title-zh {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+  .card-title-en {
+    font-size: 11px;
+    color: #6b7280;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+
+  .card-desc {
+    font-size: 12px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .card-metric {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .metric-value {
+    font-size: 20px;
+    font-weight: 800;
+    color: #3b82f6;
+  }
+  .metric-label {
+    font-size: 11px;
+    color: #9ca3af;
+  }
+
+  .card-footer {
+    padding: 8px 16px;
+    background: #f9fafb;
+    border-top: 1px solid #f3f4f6;
+  }
+  .source-link {
+    font-size: 10px;
+    color: #3b82f6;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .source-link:hover { text-decoration: underline; }
+  .source-link::before { content: ""; display: inline-block; width: 10px; height: 10px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2'%3E%3Cpath d='M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain; }
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: #e5e8f0;
+    margin: 8px 0 28px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 24px 0 32px;
+    border-top: 1px solid #e5e8f0;
+    margin-top: 16px;
+  }
+  .footer-logo { width: 49px; height: 32px; margin-bottom: 8px; border-radius: 6px; object-fit: contain; }
+  .footer-text { font-size: 11px; color: #9ca3af; }
+  .footer-text strong { color: #6b7280; }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .header-right { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <img src="file:///home/b4ac5686610a4ae2/.hermes/scripts/yonyou_logo.png" class="logo" />
+      <div class="header-title">
+        <h1>全球HR政策日报</h1>
+        <div class="subtitle">Global HR Policy Daily · 2026年5月7日</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="header-date">2026年5月7日 / May 7, 2026</div>
+      <div class="header-date-en">Issue No. 20260507A</div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Section 1: L1 核心池 4国 -->
+  <div class="section-title">L1 核心池 | Core Pool</div>
+  <div class="grid">
+
+    <!-- Card 1: Germany -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇩🇪}</span>
+          <span class="country-tag">{DE}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{德国最低工资 | 最低工资维持€13.90/小时}</div>
+        <div class="card-title-en">{Germany Minimum Wage | Mindestlohn Holds at EUR 13.90/hr}</div>
+        <div class="card-desc">{2026年1月1日起生效（2025年为€12.82，+8.4%）。下次审查不早于2027年1月。养老保险缴纳上限上调至€101,400/年。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{€13.90}</span>
+          <span class="metric-label">{每小时（税前）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.bmas.de/EN/Arbeit/Arbeitsrecht/Mindestlohn/mindestlohn.html}" target="_blank">{BMAS — Mindestlohn 2026}</a>
+      </div>
+    </div>
+
+    <!-- Card 2: UK -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇬🇧}</span>
+          <span class="country-tag">{UK}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{英国国家生活工资 | NLW上调至£12.71/小时}</div>
+        <div class="card-title-en">{UK National Living Wage | NLW Raised to GBP 12.71/hr}</div>
+        <div class="card-desc">{2026年4月1日起生效（SI 2026/357），增幅4.1%（从£12.21）。18-20岁£10.85；学徒£8.00。Skilled Worker签证年薪门槛£38,700。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{£12.71}</span>
+          <span class="metric-label">{每小时（21岁+，2026年4月）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.gov.uk/national-minimum-wage-rates}" target="_blank">{GOV.UK — NLW Rates 2026}</a>
+      </div>
+    </div>
+
+    <!-- Card 3: France -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇫🇷}</span>
+          <span class="country-tag">{FR}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{法国最低工资 | SMIC维持€12.02/小时}</div>
+        <div class="card-title-en">{France Minimum Wage | SMIC Holds at EUR 12.02/hr}</div>
+        <div class="card-desc">{2026年1月1日+1.2%生效。Q2审查确认维持；下次审查Q3 2026。CSG 9.2%、CRDS 0.5%、养老金雇员缴款6.9%、失业保险2.02%。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{€12.02}</span>
+          <span class="metric-label">{每小时（税前，2026年1月）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.service-public.fr/particuliers/actualites/A12888}" target="_blank">{Service-public.fr — SMIC 2026}</a>
+      </div>
+    </div>
+
+    <!-- Card 4: Netherlands -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇳🇱}</span>
+          <span class="country-tag">{NL}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{荷兰最低工资 | €14.71/小时（欧盟最高）}</div>
+        <div class="card-title-en">{Netherlands Minimum Wage | EUR 14.71/hr (Highest in EU)}</div>
+        <div class="card-desc">{2026年1月1日生效（从€13.68）。每半年调整（1月/7月）。16-20岁分级：16岁30%/17岁40%/18岁50%/19岁60%/20岁80%/21岁+100%。2027年1月已预告青年最低工资结构性上调。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{€14.71}</span>
+          <span class="metric-label">{每小时（21岁+，2026年1月）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.rijksoverheid.nl/onderwerpen/minimumloon/bedragen-minimumloon}" target="_blank">{Rijksoverheid.nl — Minimumloon 2026}</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Section 2: L2 轮询池 6国 -->
+  <div class="section-title">L2 轮询池 | Rotation Pool</div>
+  <div class="grid">
+
+    <!-- Card 5: Malaysia -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇰🇷}</span>
+          <span class="country-tag">{KR}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{韩国最低工资 | KRW 10,320/小时（2026年+2.9%）}</div>
+        <div class="card-title-en">{South Korea Minimum Wage | KRW 10,320/hr (+2.9% in 2026)}</div>
+        <div class="card-desc">{2026年1月生效（2025年为KRW 10,030）。国民养老金9%（劳资各半）、国民健康保险7.19%（劳资各半）、雇用保险约1.05%（雇主）。最低月薪约KRW 1,761,792（周40小时）。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{₩10,320}</span>
+          <span class="metric-label">{每小时（2026年1月生效）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.molit.go.kr/english/MINUTES/MinimumWageCommission.jsp}" target="_blank">{MOLIT Korea — Minimum Wage Commission}</a>
+      </div>
+    </div>
+
+    <!-- Card 6: Thailand -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇦🇺}</span>
+          <span class="country-tag">{AU}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{澳大利亚最低工资 | AUD 26.48/小时（2025-26年度标准）}</div>
+        <div class="card-title-en">{Australia Minimum Wage | AUD 26.48/hr (FY 2025-26)}</div>
+        <div class="card-desc">{Fair Work年度审查后2025年7月生效。2026年7月1日新标准预计涨幅3-4%（参考值AUD 25.35-25.64）。SGC养老金保证金2025-26年度为11.5%，预计2026-27年度升至12.0%（分阶段到2034年）。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{A$26.48}</span>
+          <span class="metric-label">{每小时（2025年7月至2026年6月）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.fairwork.gov.au/pay-and-wages/minimum-wages}" target="_blank">{Fair Work Commission — Minimum Wages}</a>
+      </div>
+    </div>
+
+    <!-- Card 7: Philippines -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇦🇪}</span>
+          <span class="country-tag">{AE}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{阿联酋劳动制度 | 无联邦最低工资}</div>
+        <div class="card-title-en">{UAE Labor System | No Federal Minimum Wage}</div>
+        <div class="card-desc">{无联邦法定最低工资；无个人所得税；企业税9%。工资保护通过MOHRE劳动合同执行；迪拜/阿布扎比市场薪资远高于国际标准。各酋长国可设各自标准。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{N/A}</span>
+          <span class="metric-label">{无联邦最低工资}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.mohre.gov.ae/}" target="_blank">{MOHRE UAE — Labor Regulations}</a>
+      </div>
+    </div>
+
+    <!-- Card 8: Japan -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇸🇦}</span>
+          <span class="country-tag">{SA}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{沙特阿拉伯劳动制度 | 本国公民最低SAR 4,000/月}</div>
+        <div class="card-title-en">{Saudi Arabia Labor | Saudi National MW SAR 4,000/month}</div>
+        <div class="card-desc">{本国公民最低工资SAR 4,000/月（Nitaqat框架）。GOSI：雇主缴12%（养老/残疾10%+失业2%），雇员缴10%。无个人所得税；企业税20%。绿标/金标企业可雇用更多外籍员工。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{SAR 4,000}</span>
+          <span class="metric-label">{每月（本国公民，Nitaqat）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.moi.gov.sa/}" target="_blank">{MOI Saudi Arabia — Labor Law}</a>
+      </div>
+    </div>
+
+    <!-- Card 9: South Korea -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇺🇸}</span>
+          <span class="country-tag">{US}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{美国最低工资 | 联邦$7.25/小时（自2009年无变化）}</div>
+        <div class="card-title-en">{US Minimum Wage | Federal USD 7.25/hr (unchanged since 2009)}</div>
+        <div class="card-desc">{联邦最低工资$7.25/小时无变化。州级：加州$16.50、华盛顿$16.66、纽约$16.50；新泽西/马萨诸塞/康涅狄格$15.00。联邦受保护行业另有标准。约20州仍执行联邦底线。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{$7.25}</span>
+          <span class="metric-label">{每小时（联邦，2009年起）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.dol.gov/agencies/whd/minimum-wage}" target="_blank">{USDOL — Federal Minimum Wage}</a>
+      </div>
+    </div>
+
+    <!-- Card 10: Australia -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-flag">
+          <span class="flag-emoji">{🇨🇦}</span>
+          <span class="country-tag">{CA}</span>
+        </div>
+        <span class="card-date">{2026-05-07}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title-zh">{加拿大最低工资 | CAD 18.15/小时（2026年4月+5.8%）}</div>
+        <div class="card-title-en">{Canada Minimum Wage | CAD 18.15/hr (+5.8% from April 2026)}</div>
+        <div class="card-desc">{2026年4月1日起联邦最低工资上调5.8%至CAD 18.15/小时，适用于联邦监管私部门（银行、航空等）。各省不同：阿尔伯塔$18.00、BC约$17.40、安大略$17.20。}</div>
+        <div class="card-metric">
+          <span class="metric-value">{C$18.15}</span>
+          <span class="metric-label">{每小时（联邦，2026年4月）}</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="source-link" href="{https://www.canada.ca/en/employment-social-development/services/labour-standards/reports.html}" target="_blank">{Canada ESDC — Labour Standards}</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <img src="file:///home/b4ac5686610a4ae2/.hermes/scripts/yonyou_logo.png" class="footer-logo" />
+    <div class="footer-text">
+      <strong>用友网络科技股份有限公司</strong> | Yonyou Network Technology Co., Ltd.<br/>
+      数据来源：各国家/地区官方劳工政策公告 | © 2026 Global HR Policy Daily
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
