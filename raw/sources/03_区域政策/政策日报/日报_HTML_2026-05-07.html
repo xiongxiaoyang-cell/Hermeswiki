@@ -5,479 +5,777 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>全球HR政策日报 | Global HR Policy Daily</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* ── RESET ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── TOKENS ── */
+  :root {
+    --bg:       #f5f6fa;
+    --surface:  #ffffff;
+    --primary:  #1e3a5f;   /* 深海蓝 */
+    --accent:   #2563eb;   /* 品牌蓝 */
+    --accent2:  #3b82f6;  /* 亮蓝 */
+    --muted:    #64748b;
+    --line:     #e2e8f0;
+    --text:     #1e293b;
+    --text-sec: #475569;
+    --en:       #64748b;
+    --src:      #94a3b8;
+    --tag-bg:   #dbeafe;
+    --tag:      #1d4ed8;
+    --shadow:   0 1px 3px rgba(30,58,95,0.08), 0 1px 2px rgba(30,58,95,0.06);
+  }
 
   body {
-    background-color: #f5f6fa;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-    min-height: 100vh;
-    color: #1a1a2e;
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
   }
 
-  .page { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-
-  /* Header */
-  .header {
-    background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
-    border-bottom: 1px solid #e4e8f0;
-    padding: 24px 0 20px;
-    margin-bottom: 32px;
+  /* ── PAGE WRAPPER ── */
+  .doc {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 24px 48px;
   }
-  .header-inner {
+
+  /* ── HEADER ── */
+  .hdr {
+    background: var(--primary);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
+    box-shadow: 0 4px 16px rgba(30,58,95,0.18);
   }
-  .header-left { display: flex; align-items: center; gap: 16px; position: relative; z-index: 10; }
-  .logo { width: 48px; height: auto; border-radius: 6px; object-fit: contain; flex-shrink: 0; }
-  .header-title { position: relative; }
-  .header-title h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1a2e;
-    letter-spacing: 1px;
-    line-height: 1.2;
+  .hdr-left { display: flex; align-items: center; gap: 16px; }
+  .logo {
+    width: 48px; height: 48px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #fff;
+    padding: 4px;
+    flex-shrink: 0;
   }
-  .header-title .subtitle {
-    font-size: 12px;
-    color: #6b7280;
-    margin-top: 2px;
+  .hdr-title { color: #fff; }
+  .hdr-title h1 {
+    font-size: 22px; font-weight: 800; letter-spacing: 0.5px; line-height: 1.2;
   }
-  .header-right { text-align: right; }
-  .header-date {
-    font-size: 14px;
-    font-weight: 600;
-    color: #374151;
+  .hdr-title p { font-size: 12px; color: rgba(255,255,255,0.65); margin-top: 4px; }
+  .hdr-right { text-align: right; }
+  .hdr-date { font-size: 14px; font-weight: 700; color: #fff; }
+  .hdr-meta  { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 3px; }
+
+  /* ── SECTION LABEL ── */
+  .sec-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 2.5px;
+    color: var(--muted); text-transform: uppercase;
+    margin-bottom: 14px; margin-top: 32px;
+    display: flex; align-items: center; gap: 10px;
   }
-  .header-date-en {
-    font-size: 11px;
-    color: #9ca3af;
-    margin-top: 2px;
+  .sec-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--line);
   }
 
-  /* Section title */
-  .section-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: #6b7280;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    padding-left: 4px;
-    border-left: 3px solid #3b82f6;
-  }
-
-  /* Grid — 自适应列数：内容少时3列撑满，内容多时自动扩展至4-5列 */
+  /* ── CARD GRID ── */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 16px;
-    margin-bottom: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
   }
 
-  /* Card */
+  /* ── CARD ── */
   .card {
-    background: #ffffff;
+    background: var(--surface);
     border-radius: 12px;
-    border: 1px solid #e5e8f0;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line);
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s;
-    /* 防止打印时信息卡被截断 */
     break-inside: avoid;
-    -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
-  }
-  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-
-  .card-top {
+    -webkit-column-break-inside: avoid;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Card accent bar */
+  .card-accent {
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent2) 100%);
+  }
+
+  /* Card header */
+  .card-head {
+    display: flex; align-items: center;
     justify-content: space-between;
-    padding: 14px 16px 10px;
-    border-bottom: 1px solid #f3f4f6;
+    padding: 10px 14px 8px;
+    border-bottom: 1px solid #f1f5f9;
   }
-  .card-flag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  .card-flag { display: flex; align-items: center; gap: 7px; }
+  .flag { font-size: 18px; line-height: 1; }
+  .tag {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.8px;
+    background: var(--tag-bg); color: var(--tag);
+    padding: 2px 7px; border-radius: 3px;
   }
-  .flag-emoji { font-size: 22px; line-height: 1; }
-  .country-tag {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 3px 8px;
-    border-radius: 4px;
-    background: #eff6ff;
-    color: #3b82f6;
+  .c-date { font-size: 9px; color: var(--src); }
+
+  /* Card body */
+  .c-body { padding: 11px 14px 9px; flex: 1; }
+
+  .c-title-zh {
+    font-size: 13px; font-weight: 700; color: var(--text);
+    line-height: 1.4; margin-bottom: 2px;
   }
-  .card-date {
-    font-size: 10px;
-    color: #9ca3af;
-    font-weight: 500;
+  .c-title-en {
+    font-size: 9px; color: var(--en); font-style: italic;
+    line-height: 1.4; margin-bottom: 7px;
   }
 
-  .card-body { padding: 14px 16px 16px; }
-
-  .card-title-zh {
-    font-size: 14px;
-    font-weight: 700;
-    color: #1f2937;
-    line-height: 1.4;
-    margin-bottom: 4px;
+  /* Metric row */
+  .c-metric {
+    display: flex; align-items: baseline;
+    gap: 5px; margin-bottom: 7px;
   }
-  .card-title-en {
-    font-size: 11px;
-    color: #6b7280;
-    line-height: 1.4;
-    margin-bottom: 10px;
-    font-style: italic;
+  .c-mval {
+    font-size: 9px; font-weight: 900;
+    color: var(--accent); letter-spacing: -0.3px;
   }
+  .c-mlbl { font-size: 9px; color: var(--muted); }
 
-  .card-desc {
-    font-size: 12px;
-    color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 10px;
+  /* DESC */
+  .c-desc {
+    font-size: 11px; color: var(--text-sec);
+    line-height: 1.65; margin-bottom: 4px;
+  }
+  .c-desc-en {
+    font-size: 9px; color: var(--en); font-style: italic;
+    line-height: 1.5;
   }
 
-  .card-metric {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    margin-bottom: 8px;
+  /* Card footer / source */
+  .c-foot {
+    padding: 7px 14px;
+    background: #fafbfc;
+    border-top: 1px solid #f1f5f9;
+    margin-top: auto;
   }
-  .metric-value {
-    font-size: 20px;
-    font-weight: 800;
-    color: #3b82f6;
-  }
-  .metric-label {
-    font-size: 11px;
-    color: #9ca3af;
-  }
-
-  .card-footer {
-    padding: 8px 16px;
-    background: #f9fafb;
-    border-top: 1px solid #f3f4f6;
-  }
-  .source-link {
-    font-size: 10px;
-    color: #3b82f6;
+  .src {
+    font-size: 8.5px; color: var(--accent);
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+    display: flex; align-items: center; gap: 4px;
+    white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis; max-width: 100%;
   }
-  .source-link:hover { text-decoration: underline; }
-  .source-link::before { content: ""; display: inline-block; width: 10px; height: 10px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2'%3E%3Cpath d='M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain; }
-  /* Divider */
-  .divider {
-    height: 1px;
-    background: #e5e8f0;
-    margin: 8px 0 28px;
+  .src:hover { text-decoration: underline; }
+  .src::before {
+    content: '';
+    display: inline-block;
+    width: 9px; height: 9px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2'%3E%3Cpath d='M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E") no-repeat center / contain;
+    flex-shrink: 0;
   }
 
-  /* Footer */
+  /* ── FOOTER ── */
   .footer {
     text-align: center;
-    padding: 24px 0 32px;
-    border-top: 1px solid #e5e8f0;
-    margin-top: 16px;
+    padding: 28px 0 8px;
+    border-top: 1px solid var(--line);
+    margin-top: 36px;
   }
-  .footer-logo { width: 49px; height: 32px; margin-bottom: 8px; border-radius: 6px; object-fit: contain; }
-  .footer-text { font-size: 11px; color: #9ca3af; }
-  .footer-text strong { color: #6b7280; }
+  .footer-logo {
+    width: 40px; height: 26px; object-fit: contain;
+    border-radius: 5px; margin-bottom: 8px;
+  }
+  .footer p { font-size: 10px; color: var(--src); line-height: 1.8; }
 
-  @media (max-width: 900px) {
-    .grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 600px) {
+  /* ── RESPONSIVE ── */
+  @media (max-width: 680px) {
     .grid { grid-template-columns: 1fr; }
-    .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
-    .header-right { text-align: left; }
+    .hdr { flex-direction: column; gap: 14px; }
+    .hdr-right { text-align: left; }
   }
+
+  /* ── PRINT ── */
+  @media print {
+    .doc { padding: 0 12px 20px; }
+    .hdr { border-radius: 0; }
+    .card { box-shadow: none; border: 1px solid #cbd5e1; }
+    .card-accent { height: 2px; }
+  }
+
+  /* 隐藏空白卡片 */
+  .card:has(.tag:empty) { display: none !important; }
+
+  /* 隐藏无内容的空白卡片 */
+  .card.is-empty { display: none !important; }
+
 </style>
 </head>
 <body>
 
-<!-- Header -->
-<div class="header">
-  <div class="header-inner">
-    <div class="header-left">
-      <img src="file:///home/b4ac5686610a4ae2/.hermes/scripts/yonyou_logo.png" class="logo" />
-      <div class="header-title">
+<div class="doc">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div class="hdr-left">
+      <img src="data:image/png;base64,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" class="logo" alt="用友" />
+      <div class="hdr-title">
         <h1>全球HR政策日报</h1>
-        <div class="subtitle">Global HR Policy Daily · 2026年5月7日</div>
+        <p>Global HR Policy Daily &nbsp;|&nbsp; 2026年5月7日</p>
       </div>
     </div>
-    <div class="header-right">
-      <div class="header-date">2026年5月7日 / May 7, 2026 (Thursday, Week 19)</div>
-      <div class="header-date-en">Issue No. 20260507</div>
+    <div class="hdr-right">
+      <div class="hdr-date">2026年5月7日</div>
+      <div class="hdr-meta">May 7, 2026 (Thursday) &nbsp; Issue 19</div>
     </div>
   </div>
-</div>
 
-<div class="page">
-
-  <!-- Section 1: L1 核心池 4国 -->
-  <div class="section-title">📋 L1 核心池 | Core Pool</div>
+  <!-- L1 SECTION -->
   <div class="grid">
 
-    <!-- Card 1: Germany -->
+    <!-- Card 1: DE 最低工资 | Minimum Wage (Jikyeogjeung Gong-dong Hyeobjeong) -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇩🇪</span>
-          <span class="country-tag">{德国}</span>
+          <span class="flag">🇩🇪</span>
+          <span class="tag">DE</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">Issue 19</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{最低工资 | Minimum Wage}</div>
-        <div class="card-title-en">{Mindestlohn}</div>
-        <div class="card-desc">{2026年1月1日起生效，较2025年 EUR 12.82/小时提升8.4%。养老保险缴纳上限同步上调至 EUR 101,400/年。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{EUR 13.50}</span>
-          <span class="metric-label">{小时（税前）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">最低工资 | Minimum Wage (Mindestlohn)</div>
+        <div class="c-title-en">最低工资 | Minimum Wage (Mindestlohn)</div>
+        <div class="c-metric">
+          <span class="c-mval">EUR 13.50/小时</span>
+          <span class="c-mlbl">（税前）</span>
         </div>
+        <div class="c-desc">2026年1月1日起生效，较2025年 EUR 12.82/小时提升8.4%。养老保险缴纳上限同步上调至 EUR 101,400/年。</div>
+        <div class="c-desc-en">EUR 13.50/hour (gross) 2026年1月1日起生效，较2025年 EUR 12.82/小时提升8.4%。养老保险缴纳上限同步上调至 EUR 101,400/年。</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.zoll.de/EN/Fields-of-Task/Minimum-wage/}" target="_blank">{Zoll.de / BMAS}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.zoll.de/EN/Fields-of-Task/Minimum-wage/" target="_blank">www.zoll.de/EN/Fields-of-Task/Minimum-wage</a>
       </div>
     </div>
 
-    <!-- Card 2: UK -->
+    <!-- Card 2: DE Social Insurance -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇬🇧</span>
-          <span class="country-tag">{英国}</span>
+          <span class="flag">🇩🇪</span>
+          <span class="tag">DE</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{国家生活工资 | National Living Wage}</div>
-        <div class="card-title-en">{NLW}</div>
-        <div class="card-desc">{2026年4月1日起生效（Statutory Instrument 2026/357），增幅4.1%。18-20岁 GBP 10.85；16-17岁及学徒 GBP 8.00。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{GBP 12.71}</span>
-          <span class="metric-label">{小时（21岁及以上）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">社会保险 | Social Insurance (Sozialversicherung)</div>
+        <div class="c-title-en">社会保险 | Social Insurance (Sozialversicherung)</div>
+        <div class="c-metric">
+          <span class="c-mval">养老保险 18.6%、医疗保险 14.6%+附加费、失业保险 2.6%、护理保险 3.4%+附加费</span>
         </div>
+        <div class="c-desc">2026年缴纳上限已更新（Wertgrenze），收入上限 AOK 等略有调整。</div>
+        <div class="c-desc-en">Pension 18.6%, Health Insurance 14.6%+surcharge, Unemployment 2.6%, Nursing Care 3.4%+surcharge 2026年缴纳上限已更新（Wertgrenze），收入上限 AOK 等略有调整。</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.gov.uk/national-minimum-wage-rates}" target="_blank">{GOV.UK}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.bmas.de/" target="_blank">www.bmas.de</a>
       </div>
     </div>
 
-    <!-- Card 3: France -->
+    <!-- Card 3: UK NLW -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇫🇷</span>
-          <span class="country-tag">{法国}</span>
+          <span class="flag">🇬🇧</span>
+          <span class="tag">UK</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{最低工资 | SMIC}</div>
-        <div class="card-title-en">{Salaire Minimum Interprofessionnel de Croissance}</div>
-        <div class="card-desc">{2026年1月1日起生效（+1.2%）。政府按季度自动审查（indexation）。2026年Q2审查已确认维持当前水平，下次审查 Q3 2026。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{EUR 12.02}</span>
-          <span class="metric-label">{小时（税前）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">国家生活工资 | National Living Wage (NLW)</div>
+        <div class="c-title-en">国家生活工资 | National Living Wage (NLW)</div>
+        <div class="c-metric">
+          <span class="c-mval">GBP 12.71/小时</span>
+          <span class="c-mlbl">（21岁及以上）</span>
         </div>
+        <div class="c-desc">2026年4月1日起生效（Statutory Instrument 2026/357），增幅4.1%。18-20岁 GBP 10.85；16-17岁及学徒 GBP 8.00。</div>
+        <div class="c-desc-en">GBP 12.71/hour (ages 21+) 2026年4月1日起生效（Statutory Instrument 2026/357），增幅4.1%。18-20岁 GBP 10.85；16-17岁及学徒 GBP 8.00。</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.service-public.fr/particuliers/actualites/A12888}" target="_blank">{Service-Public.fr}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.gov.uk/national-minimum-wage-rates" target="_blank">www.gov.uk/national-minimum-wage-rates</a>
       </div>
     </div>
 
-    <!-- Card 4: Netherlands -->
+    <!-- Card 4: UK Skilled Worker -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇳🇱</span>
-          <span class="country-tag">{荷兰}</span>
+          <span class="flag">🇬🇧</span>
+          <span class="tag">UK</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{最低工资 | Minimum Wage}</div>
-        <div class="card-title-en">{Minimumloon}</div>
-        <div class="card-desc">{2026年1月1日起生效（从 EUR 13.68 上调）。青年分级：16岁 30%、17岁 40%、18岁 50%、19岁 60%、20岁 80%。2027年1月已预告再次上调。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{EUR 14.71}</span>
-          <span class="metric-label">{小时（21岁及以上）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">技能工人签证 | Skilled Worker Visa</div>
+        <div class="c-title-en">技能工人签证 | Skilled Worker Visa</div>
+        <div class="c-metric">
+          <span class="c-mval">年薪门槛 GBP 38,700</span>
+          <span class="c-mlbl">（标准职业代码），健康附加费 GBP 1,035/年</span>
         </div>
+        <div class="c-desc">2026年无重大政策变化。</div>
+        <div class="c-desc-en">Salary threshold GBP 38,700 (standard occupation codes); Health Surcharge GBP 1,035/year 2026年无重大政策变化。</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.rijksoverheid.nl/onderwerpen/minimumloon/bedragen-minimumloon}" target="_blank">{Rijksoverheid.nl}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.gov.uk/skilled-worker-visa" target="_blank">www.gov.uk/skilled-worker-visa</a>
       </div>
     </div>
 
-  </div>
+    <!-- Card 5: FR SMIC -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag">🇫🇷</span>
+          <span class="tag">FR</span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh">最低工资 | Minimum Wage (SMIC)</div>
+        <div class="c-title-en">最低工资 | Minimum Wage (SMIC)</div>
+        <div class="c-metric">
+          <span class="c-mval">EUR 12.02/小时</span>
+          <span class="c-mlbl">（税前）</span>
+        </div>
+        <div class="c-desc">2026年1月1日起生效（+1.2%）。政府按季度自动审查（indexation）。2026年Q2审查已确认维持当前水平，下次审查 Q3 2026。</div>
+        <div class="c-desc-en">EUR 12.02/hour (gross) 2026年1月1日起生效（+1.2%）。政府按季度自动审查（indexation）。2026年Q2审查已确认维持当前水平，下次审查 Q3 2026。</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="https://www.service-public.fr/particuliers/actualites/A12888" target="_blank">www.service-public.fr/particuliers/actualites/A12888</a>
+      </div>
+    </div>
 
-  <div class="divider"></div>
+    <!-- Card 6: FR Social Security -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag">🇫🇷</span>
+          <span class="tag">FR</span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh">社会保险 | Social Security (Securite sociale)</div>
+        <div class="c-title-en">社会保险 | Social Security (Securite sociale)</div>
+        <div class="c-metric">
+          <span class="c-mval">CSG 9.2%</span>
+        </div>
+        <div class="c-desc">无重大变化。无重大变化。</div>
+        <div class="c-desc-en">CSG 9.2% (varies by income type), CRDS 0.5%, Pension employee contribution 6.9%, Unemployment insurance 2.02% 无重大变化。</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="https://www.ameli.fr/" target="_blank">www.ameli.fr</a>
+      </div>
+    </div>
 
-  <!-- Section 2: L2 轮询池 6国 -->
-  <div class="section-title">🌐 L2 轮询池 | Rotation Pool</div>
+    <!-- Card 7: NL Minimum Wage -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag">🇳🇱</span>
+          <span class="tag">NL</span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh">最低工资 | Minimum Wage (Minimumloon)</div>
+        <div class="c-title-en">最低工资 | Minimum Wage (Minimumloon)</div>
+        <div class="c-metric">
+          <span class="c-mval">EUR 14.71/小时</span>
+          <span class="c-mlbl">（21岁及以上）</span>
+        </div>
+        <div class="c-desc">2026年1月1日起生效（从 EUR 13.68 上调）。青年分级：16岁 30%、17岁 40%、18岁 50%、19岁 60%、20岁 80%。2027年1月已预告再次上调。</div>
+        <div class="c-desc-en">EUR 14.71/hour (ages 21+) 2026年1月1日起生效（从 EUR 13.68 上调）。青年分级：16岁 30%、17岁 40%、18岁 50%、19岁 60%、20岁 80%。2027年1月已预告再次上调。nuary 2027.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="https://www.rijksoverheid.nl/onderwerpen/minimumloon/bedragen-minimumloon" target="_blank">www.rijksoverheid.nl/onderwerpen/minimumloon</a>
+      </div>
+    </div>
+
+    <!-- Card 8: NL WAB -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag">🇳🇱</span>
+          <span class="tag">NL</span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh">同工同酬法 | Work in the Netherlands Act (WAB)</div>
+        <div class="c-title-en">同工同酬法 | Work in the Netherlands Act (WAB)</div>
+        <div class="c-metric">
+          <span class="c-mval">雇主需为所有雇员提供同等待遇</span>
+        </div>
+        <div class="c-desc">无重大变化，法案执行持续稳定。</div>
+        <div class="c-desc-en">Employers must provide equal pay for equal work (wage gap for same work must not exceed 5%) 无重大变化，法案执行持续稳定。</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="https://www.rijksoverheid.nl/" target="_blank">www.rijksoverheid.nl</a>
+      </div>
+    </div>
+
+  </div><!-- /L1 grid -->
+
+  <!-- L2 SECTION -->
   <div class="grid">
 
-    <!-- Card 5: Malaysia -->
+    <!-- Card 9: KR Minimum Wage -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇰🇷</span>
-          <span class="country-tag">{韩国}</span>
+          <span class="flag">🇰🇷</span>
+          <span class="tag">KR</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{最低工资 | Minimum Wage}</div>
-        <div class="card-title-en">{Jikyeogjeung Gong-dong Hyeobjeong}</div>
-        <div class="card-desc">{2026年1月生效（+2.9%）。最低月薪（週40小时）约 KRW 1,761,792。国民养老金9%（劳资各半），国民健康保险7.19%（劳资各半），雇用保险约1.05%（雇主）。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{KRW 10,320}</span>
-          <span class="metric-label">{小时}</span>
+      <div class="c-body">
+        <div class="c-title-zh">最低工资 | Minimum Wage (Jikyeogjeung Gong-dong Hyeobjeong)</div>
+        <div class="c-title-en">Minimum Wage</div>
+        <div class="c-metric">
+          <span class="c-mval">KRW 10,320/小时</span>
+          <span class="c-mlbl">（2026年1月生效，+2.9%）</span>
         </div>
+        <div class="c-desc">2026年新标准稳定执行，无新一轮调整公告。最低月薪（週40小时）约 KRW 1,761,792。</div>
+        <div class="c-desc-en">KRW 10,320/hour (effective January 2026, +2.9%) 2026年新标准稳定执行，无新一轮调整公告。最低月薪（週40小时）约 KRW 1,761,792。</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.molit.go.kr/english/MINUTES/MinimumWageCommission.jsp}" target="_blank">{MOLIT.go.kr}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.molit.go.kr/english/MINUTES/MinimumWageCommission.jsp" target="_blank">www.molit.go.kr/english/MINUTES/MinimumWageCommission</a>
       </div>
     </div>
 
-    <!-- Card 6: Thailand -->
+    <!-- Card 10: KR National Insurance -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇦🇺</span>
-          <span class="country-tag">{澳大利亚}</span>
+          <span class="flag">🇰🇷</span>
+          <span class="tag">KR</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{最低工资 | National Minimum Wage}</div>
-        <div class="card-title-en">{Fair Work Annual Review}</div>
-        <div class="card-desc">{AUD 24.73/小时（2025年7月 Fair Work Commission 年度审查后生效）。2026年新一轮调整将于2026年7月1日执行，预计涨幅3-4%（参考值 AUD 25.35-25.64/小时）。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{AUD 24.73}</span>
-          <span class="metric-label">{小时}</span>
+      <div class="c-body">
+        <div class="c-title-zh">国民保险 | National Insurance (Gukmin Bohum)</div>
+        <div class="c-title-en">国民保险 | National Insurance (Gukmin Bohum)</div>
+        <div class="c-metric">
+          <span class="c-mval">国民养老金 9%（劳资各半）、国民健康保险 7.19%（劳资各半）、雇用保险约 1.05%</span>
         </div>
+        <div class="c-desc">无重大变化。无重大变化。</div>
+        <div class="c-desc-en">National Pension 9% (employer/employee each half), National Health Insurance 7.19% (each half), Employment Insurance ~1.05% (employer) 无重大变化。 No significant changes.</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.fwc.gov.au/}" target="_blank">{Fair Work Commission}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.nhis.or.kr//" target="_blank">www.nhis.or.kr</a>
       </div>
     </div>
 
-    <!-- Card 7: Philippines -->
+  
+
+<!-- Card 11: KR National Insurance -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇦🇪</span>
-          <span class="country-tag">{UAE}</span>
+          <span class="flag">🇦🇺</span>
+          <span class="tag">AU</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{无全国最低工资 | No National Minimum Wage}</div>
-        <div class="card-title-en">{Federal Labor Law}</div>
-        <div class="card-desc">{阿联酋无全国性最低工资立法。私人部门按Nitaqat框架和行业协议执行，雇主须满足合同约定薪酬。无个人所得税，标准工时48小时/周。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{无全国标准}</span>
-          <span class="metric-label">{行业协议}</span>
+      <div class="c-body">
+        <div class="c-title-zh">最低工资 | National Minimum Wage (NMW)</div>
+        <div class="c-title-en">最低工资 | National Minimum Wage (NMW)</div>
+        <div class="c-metric">
+          <span class="c-mval">AUD 24.73/小时</span>
         </div>
+        <div class="c-desc">Fair Work Commission 通常在每年3-4月完成年度审查，2026年新一轮调整将于2026年7月1日执行，预计涨幅3-4%（参考值 AUD 25.35-25.64/小时）。无重大变化。</div>
+        <div class="c-desc-en">AUD 24.73/hour (effective after Fair Work Commission annual review, July 2025) Fair Work Commission 通常在每年3-4月完成年度审查，2026年新一轮调整将于2026年7月1日执行，预计涨幅3-4%（参考值 AUD 25.35-25.64/小时）。 No significant changes.</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.mol.gov.ae/}" target="_blank">{MOL UAE}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.fwc.gov.au//" target="_blank">www.fwc.gov.au</a>
       </div>
     </div>
 
-    <!-- Card 8: Japan -->
+  
+
+<!-- Card 12: KR National Insurance -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇸🇦</span>
-          <span class="country-tag">{沙特}</span>
+          <span class="flag">🇦🇺</span>
+          <span class="tag">AU</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{最低工资 | Nitaqat Minimum}</div>
-        <div class="card-title-en">{Saudi Arabian Labor Law}</div>
-        <div class="card-desc">{沙特最低工资 SAR 4,000/月（Nitaqat框架）。本地化比例（Nitaqat）要求企业按规模维持相应沙特籍员工比例。无个人所得税，年假21-30天/年。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{SAR 4,000}</span>
-          <span class="metric-label">{月（Nitaqat）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">Award 标准 | Award Standards</div>
+        <div class="c-title-en">Award 标准 | Award Standards</div>
+        <div class="c-metric">
+          <span class="c-mval">140+行业 Award，最低薪酬标准各不相同；ALH 2025年7月已上调</span>
         </div>
+        <div class="c-desc">无重大变化。无重大变化。</div>
+        <div class="c-desc-en">140+ industry Awards with varying minimum pay standards; ALH adjusted in July 2025 无重大变化。 No significant changes.</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.mlsd.gov.sa/}" target="_blank">{MOL Saudi}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.fairwork.gov.au//" target="_blank">www.fairwork.gov.au</a>
       </div>
     </div>
 
-    <!-- Card 9: South Korea -->
+  
+
+<!-- Card 13: KR National Insurance -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇺🇸</span>
-          <span class="country-tag">{美国}</span>
+          <span class="flag">🇦🇪</span>
+          <span class="tag">AE</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{联邦最低工资 | Federal Minimum Wage}</div>
-        <div class="card-title-en">{Fair Labor Standards Act}</div>
-        <div class="card-desc">{联邦最低工资 $7.25/小时（自2009年未变）。联邦承包商最低工资 $13.65/小时（2025年EO指令）。DOL正提议提高H-1B/PERM四级工资标准（Level I 17th→34th percentile）。各州最低工资各异。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{USD 7.25}</span>
-          <span class="metric-label">{小时（联邦）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">无全国最低工资 | No National Minimum Wage</div>
+        <div class="c-title-en">无全国最低工资 | No National Minimum Wage</div>
+        <div class="c-metric">
+          <span class="c-mval">阿联酋无全国性最低工资立法。私人部门按Nitaqat框架和行业协议执行，雇主须满足合同约定薪酬。</span>
         </div>
+        <div class="c-desc">无全国标准（行业协议各异），无个人所得税，标准工时48小时/周。无重大变化。</div>
+        <div class="c-desc-en">UAE has no national minimum wage legislation. Private sector wages are governed by the Nitaqat framework and industry agreements; employers must meet contracted salary terms. 无全国标准（行业协议各异），无个人所得税，标准工时48小时/周。 No significant changes.</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.dol.gov/agencies/whd/minimum-wage}" target="_blank">{DOL.gov}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.mol.gov.ae//" target="_blank">www.mol.gov.ae</a>
       </div>
     </div>
 
-    <!-- Card 10: Australia -->
+  
+
+<!-- Card 14: KR National Insurance -->
     <div class="card">
-      <div class="card-top">
+      <div class="card-accent"></div>
+      <div class="card-head">
         <div class="card-flag">
-          <span class="flag-emoji">🇨🇦</span>
-          <span class="country-tag">{加拿大}</span>
+          <span class="flag">🇸🇦</span>
+          <span class="tag">SA</span>
         </div>
-        <span class="card-date">{2026-05-07}</span>
+        <span class="c-date">2026-05-07</span>
       </div>
-      <div class="card-body">
-        <div class="card-title-zh">{联邦最低工资 | Federal Minimum Wage}</div>
-        <div class="card-title-en">{Canada Labour Code}</div>
-        <div class="card-desc">{联邦最低工资 C$17.30/小时（2025年10月生效，+5.8%）。各省最低工资各异（部分省份已超 C$17）。失业保险（EI）雇主费率 C$1.82/每100加元。}</div>
-        <div class="card-metric">
-          <span class="metric-value">{CAD 17.30}</span>
-          <span class="metric-label">{小时（联邦）}</span>
+      <div class="c-body">
+        <div class="c-title-zh">最低工资 | Nitaqat Minimum Wage</div>
+        <div class="c-title-en">最低工资 | Nitaqat Minimum Wage</div>
+        <div class="c-metric">
+          <span class="c-mval">SAR 4,000/月</span>
         </div>
+        <div class="c-desc">本地化比例（Nitaqat）要求企业按规模维持相应沙特籍员工比例。无个人所得税，年假21-30天/年。无重大变化。</div>
+        <div class="c-desc-en">SAR 4,000/month (Nitaqat framework) 本地化比例（Nitaqat）要求企业按规模维持相应沙特籍员工比例。无个人所得税，年假21-30天/年。 No significant changes.</div>
       </div>
-      <div class="card-footer">
-        <a class="source-link" href="{https://www.canada.ca/en/employment-redundancy.html}" target="_blank">{Canada.ca}</a>
+      <div class="c-foot">
+        <a class="src" href="https://www.mlsd.gov.sa//" target="_blank">www.mlsd.gov.sa</a>
       </div>
     </div>
 
-  </div>
+  
 
-  <!-- Footer -->
+<!-- Card 15: KR National Insurance -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag">🇺🇸</span>
+          <span class="tag">US</span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh">联邦最低工资 | Federal Minimum Wage (FLSA)</div>
+        <div class="c-title-en">联邦最低工资 | Federal Minimum Wage (FLSA)</div>
+        <div class="c-metric">
+          <span class="c-mval">联邦最低工资 $7.25/小时（自2009年未变）；联邦承包商最低工资 $13.65/小时</span>
+        </div>
+        <div class="c-desc">DOL正提议全面提高H-1B/PERM四级工资标准：Level I 17th percentile → 34th, Level IV 67th → 88th percentile。各州最低工资各异（部分州已超 $15/小时）。无重大变化。</div>
+        <div class="c-desc-en">Federal minimum wage $7.25/hour (unchanged since 2009); Federal contractor minimum $13.65/hour (2025 EO) DOL正提议全面提高H-1B/PERM四级工资标准：Level I 17th percentile → 34th, Level IV 67th → 88th percentile。各州最低工资各异（部分州已超 $15/小时）。 No significant changes.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="https://www.dol.gov/agencies/whd/minimum-wage/" target="_blank">www.dol.gov</a>
+      </div>
+    </div>
+
+  
+
+
+<!-- Card 16: KR National Insurance -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag">🇨🇦</span>
+          <span class="tag">CA</span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh">联邦最低工资 | Federal Minimum Wage (Canada Labour Code)</div>
+        <div class="c-title-en">联邦最低工资 | Federal Minimum Wage (Canada Labour Code)</div>
+        <div class="c-metric">
+          <span class="c-mval">C$17.30/小时</span>
+        </div>
+        <div class="c-desc">各省最低工资各异（部分省份已超 C$17/小时）。失业保险（EI）雇主费率 C$1.82/每100加元。无重大变化。</div>
+        <div class="c-desc-en">C$17.30/hour (effective October 2025, +5.8%) 各省最低工资各异（部分省份已超 C$17/小时）。失业保险（EI）雇主费率 C$1.82/每100加元。 No significant changes.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="https://www.canada.ca/en/employment-redundancy.html/" target="_blank">www.canada.ca</a>
+      </div>
+    </div>
+
+  
+
+
+<!-- Card 17: KR National Insurance -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag"></span>
+          <span class="tag"></span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh"></div>
+        <div class="c-title-en"></div>
+        <div class="c-metric">
+          <span class="c-mval"></span>
+        </div>
+        <div class="c-desc">无重大变化。</div>
+        <div class="c-desc-en"> No significant changes.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="about:blank/" target="_blank"></a>
+      </div>
+    </div>
+
+  
+
+
+<!-- Card 18: KR National Insurance -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag"></span>
+          <span class="tag"></span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh"></div>
+        <div class="c-title-en"></div>
+        <div class="c-metric">
+          <span class="c-mval"></span>
+        </div>
+        <div class="c-desc">无重大变化。</div>
+        <div class="c-desc-en"> No significant changes.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="about:blank/" target="_blank"></a>
+      </div>
+    </div>
+
+  
+
+
+<!-- Card 19: KR National Insurance -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag"></span>
+          <span class="tag"></span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh"></div>
+        <div class="c-title-en"></div>
+        <div class="c-metric">
+          <span class="c-mval"></span>
+        </div>
+        <div class="c-desc">无重大变化。</div>
+        <div class="c-desc-en"> No significant changes.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="about:blank/" target="_blank"></a>
+      </div>
+    </div>
+
+  
+
+
+<!-- Card 20: KR National Insurance -->
+    <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-head">
+        <div class="card-flag">
+          <span class="flag"></span>
+          <span class="tag"></span>
+        </div>
+        <span class="c-date">2026-05-07</span>
+      </div>
+      <div class="c-body">
+        <div class="c-title-zh"></div>
+        <div class="c-title-en"></div>
+        <div class="c-metric">
+          <span class="c-mval"></span>
+        </div>
+        <div class="c-desc">无重大变化。</div>
+        <div class="c-desc-en"> No significant changes.</div>
+      </div>
+      <div class="c-foot">
+        <a class="src" href="about:blank/" target="_blank"></a>
+      </div>
+    </div>
+
+  
+
+</div><!-- /L2 grid -->
+
+<script>
+(function() {
+  document.querySelectorAll('.card').forEach(function(card) {
+    var flag = card.querySelector('.flag');
+    var tag  = card.querySelector('.tag');
+    if (!flag || !flag.textContent.trim() || !tag || !tag.textContent.trim()) {
+      card.classList.add('is-empty');
+    }
+  });
+})();
+</script>
+
+  <!-- FOOTER -->
   <div class="footer">
-    <img src="file:///home/b4ac5686610a4ae2/.hermes/scripts/yonyou_logo.png" class="footer-logo" />
-    <div class="footer-text">
-      <strong>用友网络科技股份有限公司</strong> | Yonyou Network Technology Co., Ltd.<br/>
-      数据来源：各国家/地区官方劳工政策公告 | © 2026 Global HR Policy Daily
-    </div>
+    <img src="data:image/png;base64,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" class="footer-logo" alt="用友" />
+    <p>用友网络科技股份有限公司 | Yonyou Network Technology Co., Ltd.<br/>
+    数据来源：各国家/地区官方劳工政策公告 | Global HR Policy Daily &copy; 2026</p>
   </div>
 
-</div>
+</div><!-- /doc -->
 </body>
 </html>
